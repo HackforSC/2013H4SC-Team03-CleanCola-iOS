@@ -35,9 +35,9 @@
         [CLController startUpdatingLocation];
     }
     else{
-        rm._reloading = NO;
+        //rm._reloading = NO;
         noLocation = YES;
-        [self.specialTable reloadData];
+        //[self.specialTable reloadData];
     }
 }
 
@@ -47,22 +47,22 @@
     NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
     if (abs(howRecent) < 15.0)
     {
-        [self.imageDownloadsInProgress removeAllObjects];
+        //[self.imageDownloadsInProgress removeAllObjects];
         
-        [HUD show:YES];
+       // [HUD show:YES];
         CGPoint location = CGPointMake(newLocation.coordinate.latitude, newLocation.coordinate.longitude);
         lastLocation = location;
         //[rm loadSpecialsWithLocation:location distance:self.filterDistance day:self.filterDay];
-        rm._reloading = YES;
+        //rm._reloading = YES;
         [CLController stopUpdatingLocation];
     }
 }
 
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     NSLog(@"Location error");
-    rm._reloading = NO;
+   // rm._reloading = NO;
     noLocation = YES;
-    [HUD hide:YES];
+  //  [HUD hide:YES];
     //[self.specialTable reloadData];
 }
 
@@ -76,4 +76,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)openReportView:(id)sender {
+}
 @end

@@ -15,4 +15,6 @@
     BOOL useNearbyLocation;
     CGPoint lastLocation;
 }
+
+- (IBAction)openReportView:(id)sender;
 @end
