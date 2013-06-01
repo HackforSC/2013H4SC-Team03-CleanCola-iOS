@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		ADD3BD0043A943198FAEC63B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7022E64ED26C476A9307C9E9 /* libPods.a */; };
 		EC4FA770175AA2C300C7E351 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4FA76F175AA2C300C7E351 /* CoreLocation.framework */; };
+		EC4FA778175AA6F200C7E351 /* Incident.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4FA777175AA6F200C7E351 /* Incident.m */; };
 		ECDF8C62175A99BC0079858C /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF8C60175A99BC0079858C /* ReportViewController.m */; };
 		ECDF8C63175A99BC0079858C /* ReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECDF8C61175A99BC0079858C /* ReportViewController.xib */; };
 		F40A13D3175A83A7001698EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40A13D2175A83A7001698EB /* UIKit.framework */; };
@@ -28,6 +29,8 @@
 		7022E64ED26C476A9307C9E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27E466A7BDB4E06B2EA3A87 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		EC4FA76F175AA2C300C7E351 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EC4FA776175AA6F200C7E351 /* Incident.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Incident.h; sourceTree = "<group>"; };
+		EC4FA777175AA6F200C7E351 /* Incident.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Incident.m; sourceTree = "<group>"; };
 		ECDF8C5F175A99BC0079858C /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
 		ECDF8C60175A99BC0079858C /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
 		ECDF8C61175A99BC0079858C /* ReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportViewController.xib; sourceTree = "<group>"; };
@@ -65,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC4FA775175AA6A800C7E351 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC4FA776175AA6F200C7E351 /* Incident.h */,
+				EC4FA777175AA6F200C7E351 /* Incident.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		F40A13C6175A83A7001698EB = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +110,7 @@
 		F40A13D8175A83A8001698EB /* CleanCola */ = {
 			isa = PBXGroup;
 			children = (
+				EC4FA775175AA6A800C7E351 /* Model */,
 				F40A13E1175A83A8001698EB /* AppDelegate.h */,
 				F40A13E2175A83A8001698EB /* AppDelegate.m */,
 				F40A13EA175A83A8001698EB /* ViewController.h */,
@@ -229,6 +242,7 @@
 				F40A13E3175A83A8001698EB /* AppDelegate.m in Sources */,
 				F40A13EC175A83A8001698EB /* ViewController.m in Sources */,
 				ECDF8C62175A99BC0079858C /* ReportViewController.m in Sources */,
+				EC4FA778175AA6F200C7E351 /* Incident.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

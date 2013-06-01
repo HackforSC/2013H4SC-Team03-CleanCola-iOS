@@ -77,5 +77,7 @@
 }
 
 - (IBAction)openReportView:(id)sender {
+    ReportViewController *RVC = [[ReportViewController alloc]init];
+    [self presentViewController:RVC animated:TRUE completion:nil];
 }
 @end
