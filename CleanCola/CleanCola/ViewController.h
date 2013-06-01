@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-
+#import <MapBox/MapBox.h>
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate>{
     CLLocationManager *CLController;
@@ -17,7 +17,8 @@
     CGPoint lastLocation;
 }
 
-
+@property (nonatomic, strong) RMMapView *mapView;
 
 - (IBAction)openReportView:(id)sender;
+
 @end
