@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapBox/MapBox.h>
+#import <FlatUIKit/FUIButton.h>
+#import <FlatUIKit/UIColor+FlatUI.h>
+#import <FlatUIKit/UIFont+FlatUI.h>
+#import <FlatUIKit/UIImage+FlatUI.h>
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate>{
     CLLocationManager *CLController;
@@ -18,6 +22,7 @@
 }
 
 @property (nonatomic, strong) RMMapView *mapView;
+@property (nonatomic, strong) FUIButton *myButton;
 
 - (IBAction)openReportView:(id)sender;
 

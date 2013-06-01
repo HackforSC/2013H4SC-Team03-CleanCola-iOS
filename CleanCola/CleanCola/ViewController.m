@@ -40,7 +40,13 @@
     NSLog(@"%f", self.mapView.centerCoordinate.latitude);
     NSLog(@"%f", self.mapView.centerCoordinate.longitude);
     
-    
+    _myButton.buttonColor = [UIColor turquoiseColor];
+    _myButton.shadowColor = [UIColor greenSeaColor];
+    _myButton.shadowHeight = 3.0f;
+    _myButton.cornerRadius = 6.0f;
+    _myButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [_myButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [_myButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
 }
 
 
