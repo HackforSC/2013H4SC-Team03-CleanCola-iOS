@@ -23,6 +23,7 @@
 		F40A13E9175A83A8001698EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F40A13E8175A83A8001698EB /* Default-568h@2x.png */; };
 		F40A13EC175A83A8001698EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40A13EB175A83A8001698EB /* ViewController.m */; };
 		F40A13EF175A83A8001698EB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40A13ED175A83A8001698EB /* ViewController.xib */; };
+		F40A13F5175AA7DF001698EB /* libPods.a in Resources */ = {isa = PBXBuildFile; fileRef = 7022E64ED26C476A9307C9E9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -191,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40A13F5175AA7DF001698EB /* libPods.a in Resources */,
 				F40A13DD175A83A8001698EB /* InfoPlist.strings in Resources */,
 				F40A13E5175A83A8001698EB /* Default.png in Resources */,
 				F40A13E7175A83A8001698EB /* Default@2x.png in Resources */,

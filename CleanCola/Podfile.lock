@@ -1,6 +1,18 @@
 PODS:
   - AFNetworking (1.2.1)
   - FlatUIKit (1.1)
+  - FMDB (2.0):
+    - FMDB/standard
+  - FMDB/common (2.0)
+  - FMDB/standard (2.0):
+    - FMDB/common
+  - GRMustache (5.4.3):
+    - JRSwizzle (~> 1.0)
+  - JRSwizzle (1.0)
+  - MapBox (1.0.2):
+    - FMDB (= 2.0)
+    - GRMustache (= 5.4.3)
+    - SMCalloutView (= 1.1)
   - RestKit (0.20.1):
     - RestKit/Core
   - RestKit/Core (0.20.1):
@@ -16,17 +28,24 @@ PODS:
   - RestKit/ObjectMapping (0.20.1)
   - RestKit/Support (0.20.1):
     - TransitionKit (= 1.1.0)
+  - SMCalloutView (1.1)
   - SOCKit (1.1)
   - TransitionKit (1.1.0)
 
 DEPENDENCIES:
   - FlatUIKit
+  - MapBox
   - RestKit (~> 0.20.0)
 
 SPEC CHECKSUMS:
   AFNetworking: a44069e3c9c89867544f6639482f155c7e5f9b41
   FlatUIKit: 3b15b582ffcfa4e392bedc4d3c5461f9b11c1cc2
+  FMDB: 30a7cbcdbd354f5ee1ba081a8773fd9130c43b48
+  GRMustache: f97f90a320c36896b08ca2624003e4ab8da7cfb1
+  JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
+  MapBox: 0153d1a9817e19bfc5abf8448267654530b56d4e
   RestKit: ceca63bc91172098c710c469facd2560e8a59164
+  SMCalloutView: 1c7d62044508a8d405c25495c380b17c613f769e
   SOCKit: ed67aeeca4a697b63a933229e53f4670d5b9300f
   TransitionKit: 1624e84f252d5cd26900be28ccb73c69fbe63f8a
 
