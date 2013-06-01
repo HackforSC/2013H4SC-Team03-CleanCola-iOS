@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F40A13D3175A83A7001698EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40A13D2175A83A7001698EB /* UIKit.framework */; };
+		F40A13D5175A83A7001698EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40A13D4175A83A7001698EB /* Foundation.framework */; };
+		F40A13D7175A83A7001698EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40A13D6175A83A7001698EB /* CoreGraphics.framework */; };
+		F40A13DD175A83A8001698EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F40A13DB175A83A8001698EB /* InfoPlist.strings */; };
+		F40A13DF175A83A8001698EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F40A13DE175A83A8001698EB /* main.m */; };
+		F40A13E3175A83A8001698EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F40A13E2175A83A8001698EB /* AppDelegate.m */; };
+		F40A13E5175A83A8001698EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F40A13E4175A83A8001698EB /* Default.png */; };
+		F40A13E7175A83A8001698EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F40A13E6175A83A8001698EB /* Default@2x.png */; };
+		F40A13E9175A83A8001698EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F40A13E8175A83A8001698EB /* Default-568h@2x.png */; };
+		F40A13EC175A83A8001698EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40A13EB175A83A8001698EB /* ViewController.m */; };
+		F40A13EF175A83A8001698EB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40A13ED175A83A8001698EB /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F40A13CF175A83A7001698EB /* CleanCola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanCola.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40A13D2175A83A7001698EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F40A13D4175A83A7001698EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F40A13D6175A83A7001698EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F40A13DA175A83A8001698EB /* CleanCola-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CleanCola-Info.plist"; sourceTree = "<group>"; };
+		F40A13DC175A83A8001698EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F40A13DE175A83A8001698EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F40A13E0175A83A8001698EB /* CleanCola-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CleanCola-Prefix.pch"; sourceTree = "<group>"; };
+		F40A13E1175A83A8001698EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F40A13E2175A83A8001698EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F40A13E4175A83A8001698EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F40A13E6175A83A8001698EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F40A13E8175A83A8001698EB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F40A13EA175A83A8001698EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F40A13EB175A83A8001698EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F40A13EE175A83A8001698EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F40A13CC175A83A7001698EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40A13D3175A83A7001698EB /* UIKit.framework in Frameworks */,
+				F40A13D5175A83A7001698EB /* Foundation.framework in Frameworks */,
+				F40A13D7175A83A7001698EB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F40A13C6175A83A7001698EB = {
+			isa = PBXGroup;
+			children = (
+				F40A13D8175A83A8001698EB /* CleanCola */,
+				F40A13D1175A83A7001698EB /* Frameworks */,
+				F40A13D0175A83A7001698EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F40A13D0175A83A7001698EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F40A13CF175A83A7001698EB /* CleanCola.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F40A13D1175A83A7001698EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F40A13D2175A83A7001698EB /* UIKit.framework */,
+				F40A13D4175A83A7001698EB /* Foundation.framework */,
+				F40A13D6175A83A7001698EB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F40A13D8175A83A8001698EB /* CleanCola */ = {
+			isa = PBXGroup;
+			children = (
+				F40A13E1175A83A8001698EB /* AppDelegate.h */,
+				F40A13E2175A83A8001698EB /* AppDelegate.m */,
+				F40A13EA175A83A8001698EB /* ViewController.h */,
+				F40A13EB175A83A8001698EB /* ViewController.m */,
+				F40A13ED175A83A8001698EB /* ViewController.xib */,
+				F40A13D9175A83A8001698EB /* Supporting Files */,
+			);
+			path = CleanCola;
+			sourceTree = "<group>";
+		};
+		F40A13D9175A83A8001698EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F40A13DA175A83A8001698EB /* CleanCola-Info.plist */,
+				F40A13DB175A83A8001698EB /* InfoPlist.strings */,
+				F40A13DE175A83A8001698EB /* main.m */,
+				F40A13E0175A83A8001698EB /* CleanCola-Prefix.pch */,
+				F40A13E4175A83A8001698EB /* Default.png */,
+				F40A13E6175A83A8001698EB /* Default@2x.png */,
+				F40A13E8175A83A8001698EB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F40A13CE175A83A7001698EB /* CleanCola */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F40A13F2175A83A8001698EB /* Build configuration list for PBXNativeTarget "CleanCola" */;
+			buildPhases = (
+				F40A13CB175A83A7001698EB /* Sources */,
+				F40A13CC175A83A7001698EB /* Frameworks */,
+				F40A13CD175A83A7001698EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanCola;
+			productName = CleanCola;
+			productReference = F40A13CF175A83A7001698EB /* CleanCola.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F40A13C7175A83A7001698EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = SCHackDay;
+			};
+			buildConfigurationList = F40A13CA175A83A7001698EB /* Build configuration list for PBXProject "CleanCola" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F40A13C6175A83A7001698EB;
+			productRefGroup = F40A13D0175A83A7001698EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F40A13CE175A83A7001698EB /* CleanCola */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F40A13CD175A83A7001698EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40A13DD175A83A8001698EB /* InfoPlist.strings in Resources */,
+				F40A13E5175A83A8001698EB /* Default.png in Resources */,
+				F40A13E7175A83A8001698EB /* Default@2x.png in Resources */,
+				F40A13E9175A83A8001698EB /* Default-568h@2x.png in Resources */,
+				F40A13EF175A83A8001698EB /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F40A13CB175A83A7001698EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40A13DF175A83A8001698EB /* main.m in Sources */,
+				F40A13E3175A83A8001698EB /* AppDelegate.m in Sources */,
+				F40A13EC175A83A8001698EB /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F40A13DB175A83A8001698EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F40A13DC175A83A8001698EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F40A13ED175A83A8001698EB /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F40A13EE175A83A8001698EB /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F40A13F0175A83A8001698EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F40A13F1175A83A8001698EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F40A13F3175A83A8001698EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CleanCola/CleanCola-Prefix.pch";
+				INFOPLIST_FILE = "CleanCola/CleanCola-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F40A13F4175A83A8001698EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CleanCola/CleanCola-Prefix.pch";
+				INFOPLIST_FILE = "CleanCola/CleanCola-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F40A13CA175A83A7001698EB /* Build configuration list for PBXProject "CleanCola" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F40A13F0175A83A8001698EB /* Debug */,
+				F40A13F1175A83A8001698EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F40A13F2175A83A8001698EB /* Build configuration list for PBXNativeTarget "CleanCola" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F40A13F3175A83A8001698EB /* Debug */,
+				F40A13F4175A83A8001698EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F40A13C7175A83A7001698EB /* Project object */;
+}
