@@ -27,7 +27,20 @@
     RMMapBoxSource *source = [[RMMapBoxSource alloc] initWithMapID:@"cleancola.map-rmhk6v1q"];
     self.mapView = [[RMMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height/3*2) andTilesource:source];
     [self.view addSubview:self.mapView];
-    self.mapView.zoom = 10.0;
+    
+    self.mapView.zoom = 11.5;
+    
+    CLLocationDegrees latitude = 34.002;
+    CLLocationDegrees longitude = -81.03;
+    
+    CLLocationCoordinate2D location = CLLocationCoordinate2DMake(latitude, longitude);
+    
+    self.mapView.centerCoordinate = location;
+    
+    NSLog(@"%f", self.mapView.centerCoordinate.latitude);
+    NSLog(@"%f", self.mapView.centerCoordinate.longitude);
+    
+    
 }
 
 
