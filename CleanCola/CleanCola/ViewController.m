@@ -47,13 +47,14 @@
     NSLog(@"%f", self.mapView.centerCoordinate.latitude);
     NSLog(@"%f", self.mapView.centerCoordinate.longitude);
     
-    _myButton.buttonColor = [UIColor turquoiseColor];
-    _myButton.shadowColor = [UIColor greenSeaColor];
-    _myButton.shadowHeight = 3.0f;
-    _myButton.cornerRadius = 6.0f;
-    _myButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
-    [_myButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
-    [_myButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    _mybutton.buttonColor = [UIColor turquoiseColor];
+    _mybutton.shadowColor = [UIColor greenSeaColor];
+    _mybutton.shadowHeight = 3.0f;
+    _mybutton.cornerRadius = 6.0f;
+    _mybutton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [_mybutton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [_mybutton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    
     
     IManager = [[IncidentManager alloc]init];
     IManager.delegate = self;
@@ -121,8 +122,11 @@
 
 -(void) pushReportView
 {
-    ReportViewController *RVC = [[ReportViewController alloc]init];
-    [self presentViewController:RVC animated:TRUE completion:nil];
+    if (![self.presentedViewController isBeingDismissed]) {
+        
+        ReportViewController *RVC = [[ReportViewController alloc]init];
+        [self presentViewController:RVC animated:TRUE completion:nil];
+    }
 }
 
 
@@ -151,7 +155,11 @@
     //Chalkboard *newBoard = [[Chalkboard alloc]init];
     
     //[newBoard PostNewChalkboardWithImage:image];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+        [self pushReportView];
+    }];
+    
     [self pushReportView];
 }
 

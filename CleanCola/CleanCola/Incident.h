@@ -11,6 +11,7 @@
 @interface Incident : NSObject
 
 @property (nonatomic, copy) NSString* incident_id;
+@property (nonatomic, copy) NSString* category_id;
 @property (nonatomic, copy) NSString* description;
 @property (nonatomic, copy) NSString* latitude;
 @property (nonatomic, copy) NSString* longitude;

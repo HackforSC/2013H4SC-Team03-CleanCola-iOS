@@ -41,4 +41,15 @@
 -(void)refreshIncidents{
     [self loadIncidentsWithLocation];
 }
+
+-(void)makeNewReportWithIncident:(Incident *)inc
+{
+    inc.description = @"This is my new article!";
+    inc.category_id = @"0";
+    inc.latitude = @"-81.1";
+    inc.longitude = @"34.0906";
+    
+
+    [[RKObjectManager sharedManager] postObject:inc path:@"/v1/incidents" parameters:nil success:nil failure:nil];
+}
 @end
