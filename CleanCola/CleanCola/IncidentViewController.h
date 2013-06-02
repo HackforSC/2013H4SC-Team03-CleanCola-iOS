@@ -46,5 +46,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil incident_id:(NSString *)incident_id;
 
 - (IBAction)close:(id)sender;
+- (IBAction)valueChanged:(UIStepper *)sender;
+- (IBAction)taskCompleted:(id)sender;
 
 @end
