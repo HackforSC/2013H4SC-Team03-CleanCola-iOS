@@ -10,11 +10,13 @@
 
 @interface Incident : NSObject
 
+@property (nonatomic, copy) NSString* title;
 @property (nonatomic, copy) NSString* incident_id;
 @property (nonatomic, copy) NSString* category_id;
 @property (nonatomic, copy) NSString* description;
 @property (nonatomic, copy) NSString* latitude;
 @property (nonatomic, copy) NSString* longitude;
+@property (nonatomic, copy) UIImage* image;
 
 @property (nonatomic, strong) NSDate*   date_created;
 

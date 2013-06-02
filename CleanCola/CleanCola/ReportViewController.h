@@ -8,11 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "IncidentManager.h"
+#import "Incident.h"
 
-@interface ReportViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface ReportViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate, UIActionSheetDelegate>
+
+
+@property (weak, nonatomic) IBOutlet UITextField *reportTitle;
+@property (weak, nonatomic) IBOutlet UITextView *description;
 
 - (IBAction)SubmitReport:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
+@property (weak, nonatomic) IBOutlet UIImageView *photo;
 - (IBAction)cancelButton:(id)sender;
+@property (nonatomic, retain) UIImage *userImage;
 @end

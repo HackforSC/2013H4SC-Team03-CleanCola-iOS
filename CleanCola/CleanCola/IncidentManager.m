@@ -42,7 +42,7 @@
     [self loadIncidentsWithLocation];
 }
 
--(void)makeNewReportWithIncident:(Incident *)inc
+-(void)makeNewReportWithIncident:(Incident *)inc 
 {
     RKObjectMapping *postObjectMapping = [RKObjectMapping requestMapping];
     [postObjectMapping addAttributeMappingsFromDictionary:@{
@@ -51,32 +51,20 @@
      @"incident_id": @"incident_id",
      @"latitude": @"latitude",
      @"longitude": @"longitude",
-     @"category_id": @"category_id"
+     @"category_id": @"category_id",
+     @"image": @"image;"
      }];
-//    
-//    RKObjectMapping* incidentMapping = [RKObjectMapping mappingForClass:[Incident class]];
-//    [incidentMapping addAttributeMappingsFromDictionary:@{
-//     @"date_created": @"date_created",
-//     @"description": @"description",
-//     @"incident_id": @"incident_id",
-//     @"latitude": @"latitude",
-//     @"longitude": @"longitude"
-//     }];
+    
     RKRequestDescriptor *requestDescriptor = [RKRequestDescriptor requestDescriptorWithMapping:postObjectMapping
                                                                                    objectClass:[Incident class] rootKeyPath:nil];
     
     [[RKObjectManager sharedManager] addRequestDescriptor: requestDescriptor];
     
-    Incident *inc2 = [[Incident alloc]init];
-    inc2.description = @"This is my new article!";
-    inc2.category_id = @"0";
-    inc2.latitude = @"-81.1";
-    inc2.longitude = @"34.0906";
 
     //RKLogConfigureByName("RestKit", RKLogLevelWarning);
     //RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
     RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
 
-    [[RKObjectManager sharedManager] postObject:inc2 path:@"/incidents" parameters:nil success:nil failure:nil];
+    [[RKObjectManager sharedManager] postObject:inc path:@"/incidents" parameters:nil success:nil failure:nil];
 }
 @end

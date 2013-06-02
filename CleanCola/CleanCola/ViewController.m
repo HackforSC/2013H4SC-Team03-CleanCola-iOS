@@ -124,7 +124,8 @@
 }
 
 - (IBAction)openReportView:(id)sender {
-    [self startCamera];
+    ReportViewController *RVC = [[ReportViewController alloc]init];
+    [self presentViewController:RVC animated:TRUE completion:nil];
 }
 
 -(void) pushReportView
