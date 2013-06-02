@@ -26,24 +26,6 @@
 		F40A13EF175A83A8001698EB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40A13ED175A83A8001698EB /* ViewController.xib */; };
 		F40A13F5175AA7DF001698EB /* libPods.a in Resources */ = {isa = PBXBuildFile; fileRef = 7022E64ED26C476A9307C9E9 /* libPods.a */; };
 		F48B3099175B1BFE00118881 /* CCMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B3098175B1BFE00118881 /* CCMarker.m */; };
-		F48B31DF175B2FDF00118881 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F48B309B175B2FDE00118881 /* .gitignore */; };
-		F48B31E0175B2FDF00118881 /* .npmignore in Resources */ = {isa = PBXBuildFile; fileRef = F48B309C175B2FDE00118881 /* .npmignore */; };
-		F48B31E1175B2FDF00118881 /* _config.yml in Resources */ = {isa = PBXBuildFile; fileRef = F48B309D175B2FDE00118881 /* _config.yml */; };
-		F48B31E2175B2FDF00118881 /* default.html in Resources */ = {isa = PBXBuildFile; fileRef = F48B309F175B2FDE00118881 /* default.html */; };
-		F48B31E3175B2FDF00118881 /* maki.ServerStyle in Resources */ = {isa = PBXBuildFile; fileRef = F48B30A1175B2FDE00118881 /* maki.ServerStyle */; };
-		F48B31E4175B2FDF00118881 /* maki.style in Resources */ = {isa = PBXBuildFile; fileRef = F48B30A2175B2FDE00118881 /* maki.style */; };
-		F48B31E5175B2FDF00118881 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = F48B30A3175B2FDE00118881 /* README.markdown */; };
-		F48B31E6175B2FDF00118881 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F48B30A4175B2FDE00118881 /* index.html */; };
-		F48B31E7175B2FDF00118881 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F48B30A5175B2FDE00118881 /* LICENSE.txt */; };
-		F48B31E8175B2FDF00118881 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = F48B30A6175B2FDE00118881 /* package.json */; };
-		F48B31E9175B2FDF00118881 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B30A8175B2FDE00118881 /* image1.png */; };
-		F48B31EA175B2FDF00118881 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B30A9175B2FDE00118881 /* image2.png */; };
-		F48B31EB175B2FDF00118881 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B30AA175B2FDE00118881 /* image3.png */; };
-		F48B31EC175B2FDF00118881 /* image4.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B30AB175B2FDE00118881 /* image4.png */; };
-		F48B31ED175B2FDF00118881 /* image5.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B30AC175B2FDE00118881 /* image5.png */; };
-		F48B31EE175B2FDF00118881 /* image6.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B30AD175B2FDE00118881 /* image6.png */; };
-		F48B31EF175B2FDF00118881 /* maki-blogpost.svg in Resources */ = {isa = PBXBuildFile; fileRef = F48B30AE175B2FDE00118881 /* maki-blogpost.svg */; };
-		F48B31F0175B2FDF00118881 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = F48B30AF175B2FDE00118881 /* README.markdown */; };
 		F48B31F1175B2FDF00118881 /* airfield-12.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B30B1175B2FDE00118881 /* airfield-12.png */; };
 		F48B31F2175B2FDF00118881 /* airfield-18.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B30B2175B2FDE00118881 /* airfield-18.png */; };
 		F48B31F3175B2FDF00118881 /* airfield-24.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B30B3175B2FDE00118881 /* airfield-24.png */; };
@@ -323,26 +305,6 @@
 		F48B3305175B2FDF00118881 /* zoo-12.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31C5175B2FDF00118881 /* zoo-12.png */; };
 		F48B3306175B2FDF00118881 /* zoo-18.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31C6175B2FDF00118881 /* zoo-18.png */; };
 		F48B3307175B2FDF00118881 /* zoo-24.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31C7175B2FDF00118881 /* zoo-24.png */; };
-		F48B3308175B2FDF00118881 /* maki-icons.svg in Resources */ = {isa = PBXBuildFile; fileRef = F48B31C9175B2FDF00118881 /* maki-icons.svg */; };
-		F48B3309175B2FDF00118881 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31CC175B2FDF00118881 /* bg.png */; };
-		F48B330A175B2FDF00118881 /* bg.svg in Resources */ = {isa = PBXBuildFile; fileRef = F48B31CD175B2FDF00118881 /* bg.svg */; };
-		F48B330B175B2FDF00118881 /* dotgrid-pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31CE175B2FDF00118881 /* dotgrid-pattern.png */; };
-		F48B330C175B2FDF00118881 /* maki-preview-12.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31CF175B2FDF00118881 /* maki-preview-12.png */; };
-		F48B330D175B2FDF00118881 /* maki-preview-12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31D0175B2FDF00118881 /* maki-preview-12@2x.png */; };
-		F48B330E175B2FDF00118881 /* maki-preview-18.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31D1175B2FDF00118881 /* maki-preview-18.png */; };
-		F48B330F175B2FDF00118881 /* maki-preview-18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31D2175B2FDF00118881 /* maki-preview-18@2x.png */; };
-		F48B3310175B2FDF00118881 /* maki-preview-24.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31D3175B2FDF00118881 /* maki-preview-24.png */; };
-		F48B3311175B2FDF00118881 /* maki-preview-24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31D4175B2FDF00118881 /* maki-preview-24@2x.png */; };
-		F48B3312175B2FDF00118881 /* maki-preview-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31D5175B2FDF00118881 /* maki-preview-bg.png */; };
-		F48B3313175B2FDF00118881 /* maki-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31D6175B2FDF00118881 /* maki-sprite.png */; };
-		F48B3314175B2FDF00118881 /* maki-sprite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31D7175B2FDF00118881 /* maki-sprite@2x.png */; };
-		F48B3315175B2FDF00118881 /* sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31D8175B2FDF00118881 /* sprite.png */; };
-		F48B3316175B2FDF00118881 /* sprite.svg in Resources */ = {isa = PBXBuildFile; fileRef = F48B31D9175B2FDF00118881 /* sprite.svg */; };
-		F48B3317175B2FDF00118881 /* sprite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31DA175B2FDF00118881 /* sprite@2x.png */; };
-		F48B3318175B2FDF00118881 /* maki-sprite.css in Resources */ = {isa = PBXBuildFile; fileRef = F48B31DB175B2FDF00118881 /* maki-sprite.css */; };
-		F48B3319175B2FDF00118881 /* maki.json in Resources */ = {isa = PBXBuildFile; fileRef = F48B31DC175B2FDF00118881 /* maki.json */; };
-		F48B331A175B2FDF00118881 /* site.css in Resources */ = {isa = PBXBuildFile; fileRef = F48B31DD175B2FDF00118881 /* site.css */; };
-		F48B331B175B2FDF00118881 /* site.js in Sources */ = {isa = PBXBuildFile; fileRef = F48B31DE175B2FDF00118881 /* site.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -374,24 +336,6 @@
 		F40A13EE175A83A8001698EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		F48B3097175B1BFD00118881 /* CCMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMarker.h; sourceTree = "<group>"; };
 		F48B3098175B1BFE00118881 /* CCMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMarker.m; sourceTree = "<group>"; };
-		F48B309B175B2FDE00118881 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		F48B309C175B2FDE00118881 /* .npmignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .npmignore; sourceTree = "<group>"; };
-		F48B309D175B2FDE00118881 /* _config.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _config.yml; sourceTree = "<group>"; };
-		F48B309F175B2FDE00118881 /* default.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = default.html; sourceTree = "<group>"; };
-		F48B30A1175B2FDE00118881 /* maki.ServerStyle */ = {isa = PBXFileReference; lastKnownFileType = file; path = maki.ServerStyle; sourceTree = "<group>"; };
-		F48B30A2175B2FDE00118881 /* maki.style */ = {isa = PBXFileReference; lastKnownFileType = file; path = maki.style; sourceTree = "<group>"; };
-		F48B30A3175B2FDE00118881 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
-		F48B30A4175B2FDE00118881 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		F48B30A5175B2FDE00118881 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		F48B30A6175B2FDE00118881 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
-		F48B30A8175B2FDE00118881 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
-		F48B30A9175B2FDE00118881 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
-		F48B30AA175B2FDE00118881 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
-		F48B30AB175B2FDE00118881 /* image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image4.png; sourceTree = "<group>"; };
-		F48B30AC175B2FDE00118881 /* image5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image5.png; sourceTree = "<group>"; };
-		F48B30AD175B2FDE00118881 /* image6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image6.png; sourceTree = "<group>"; };
-		F48B30AE175B2FDE00118881 /* maki-blogpost.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "maki-blogpost.svg"; sourceTree = "<group>"; };
-		F48B30AF175B2FDE00118881 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		F48B30B1175B2FDE00118881 /* airfield-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airfield-12.png"; sourceTree = "<group>"; };
 		F48B30B2175B2FDE00118881 /* airfield-18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airfield-18.png"; sourceTree = "<group>"; };
 		F48B30B3175B2FDE00118881 /* airfield-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airfield-24.png"; sourceTree = "<group>"; };
@@ -671,26 +615,6 @@
 		F48B31C5175B2FDF00118881 /* zoo-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoo-12.png"; sourceTree = "<group>"; };
 		F48B31C6175B2FDF00118881 /* zoo-18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoo-18.png"; sourceTree = "<group>"; };
 		F48B31C7175B2FDF00118881 /* zoo-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoo-24.png"; sourceTree = "<group>"; };
-		F48B31C9175B2FDF00118881 /* maki-icons.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "maki-icons.svg"; sourceTree = "<group>"; };
-		F48B31CC175B2FDF00118881 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
-		F48B31CD175B2FDF00118881 /* bg.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bg.svg; sourceTree = "<group>"; };
-		F48B31CE175B2FDF00118881 /* dotgrid-pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dotgrid-pattern.png"; sourceTree = "<group>"; };
-		F48B31CF175B2FDF00118881 /* maki-preview-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maki-preview-12.png"; sourceTree = "<group>"; };
-		F48B31D0175B2FDF00118881 /* maki-preview-12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maki-preview-12@2x.png"; sourceTree = "<group>"; };
-		F48B31D1175B2FDF00118881 /* maki-preview-18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maki-preview-18.png"; sourceTree = "<group>"; };
-		F48B31D2175B2FDF00118881 /* maki-preview-18@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maki-preview-18@2x.png"; sourceTree = "<group>"; };
-		F48B31D3175B2FDF00118881 /* maki-preview-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maki-preview-24.png"; sourceTree = "<group>"; };
-		F48B31D4175B2FDF00118881 /* maki-preview-24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maki-preview-24@2x.png"; sourceTree = "<group>"; };
-		F48B31D5175B2FDF00118881 /* maki-preview-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maki-preview-bg.png"; sourceTree = "<group>"; };
-		F48B31D6175B2FDF00118881 /* maki-sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maki-sprite.png"; sourceTree = "<group>"; };
-		F48B31D7175B2FDF00118881 /* maki-sprite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maki-sprite@2x.png"; sourceTree = "<group>"; };
-		F48B31D8175B2FDF00118881 /* sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite.png; sourceTree = "<group>"; };
-		F48B31D9175B2FDF00118881 /* sprite.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sprite.svg; sourceTree = "<group>"; };
-		F48B31DA175B2FDF00118881 /* sprite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sprite@2x.png"; sourceTree = "<group>"; };
-		F48B31DB175B2FDF00118881 /* maki-sprite.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "maki-sprite.css"; sourceTree = "<group>"; };
-		F48B31DC175B2FDF00118881 /* maki.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = maki.json; sourceTree = "<group>"; };
-		F48B31DD175B2FDF00118881 /* site.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = site.css; sourceTree = "<group>"; };
-		F48B31DE175B2FDF00118881 /* site.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = site.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -751,7 +675,7 @@
 		F40A13D8175A83A8001698EB /* CleanCola */ = {
 			isa = PBXGroup;
 			children = (
-				F48B309A175B2FDE00118881 /* mapbox-maki-942d39d */,
+				F48B30B0175B2FDE00118881 /* renders */,
 				EC4FA775175AA6A800C7E351 /* Model */,
 				F40A13E1175A83A8001698EB /* AppDelegate.h */,
 				F40A13E2175A83A8001698EB /* AppDelegate.m */,
@@ -782,58 +706,6 @@
 				F40A13E8175A83A8001698EB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F48B309A175B2FDE00118881 /* mapbox-maki-942d39d */ = {
-			isa = PBXGroup;
-			children = (
-				F48B309B175B2FDE00118881 /* .gitignore */,
-				F48B309C175B2FDE00118881 /* .npmignore */,
-				F48B309D175B2FDE00118881 /* _config.yml */,
-				F48B309E175B2FDE00118881 /* _layouts */,
-				F48B30A0175B2FDE00118881 /* ArcGIS */,
-				F48B30A4175B2FDE00118881 /* index.html */,
-				F48B30A5175B2FDE00118881 /* LICENSE.txt */,
-				F48B30A6175B2FDE00118881 /* package.json */,
-				F48B30A7175B2FDE00118881 /* promo-graphics */,
-				F48B30AF175B2FDE00118881 /* README.markdown */,
-				F48B30B0175B2FDE00118881 /* renders */,
-				F48B31C8175B2FDF00118881 /* src */,
-				F48B31CA175B2FDF00118881 /* www */,
-			);
-			path = "mapbox-maki-942d39d";
-			sourceTree = "<group>";
-		};
-		F48B309E175B2FDE00118881 /* _layouts */ = {
-			isa = PBXGroup;
-			children = (
-				F48B309F175B2FDE00118881 /* default.html */,
-			);
-			path = _layouts;
-			sourceTree = "<group>";
-		};
-		F48B30A0175B2FDE00118881 /* ArcGIS */ = {
-			isa = PBXGroup;
-			children = (
-				F48B30A1175B2FDE00118881 /* maki.ServerStyle */,
-				F48B30A2175B2FDE00118881 /* maki.style */,
-				F48B30A3175B2FDE00118881 /* README.markdown */,
-			);
-			path = ArcGIS;
-			sourceTree = "<group>";
-		};
-		F48B30A7175B2FDE00118881 /* promo-graphics */ = {
-			isa = PBXGroup;
-			children = (
-				F48B30A8175B2FDE00118881 /* image1.png */,
-				F48B30A9175B2FDE00118881 /* image2.png */,
-				F48B30AA175B2FDE00118881 /* image3.png */,
-				F48B30AB175B2FDE00118881 /* image4.png */,
-				F48B30AC175B2FDE00118881 /* image5.png */,
-				F48B30AD175B2FDE00118881 /* image6.png */,
-				F48B30AE175B2FDE00118881 /* maki-blogpost.svg */,
-			);
-			path = "promo-graphics";
 			sourceTree = "<group>";
 		};
 		F48B30B0175B2FDE00118881 /* renders */ = {
@@ -1119,49 +991,8 @@
 				F48B31C6175B2FDF00118881 /* zoo-18.png */,
 				F48B31C7175B2FDF00118881 /* zoo-24.png */,
 			);
-			path = renders;
-			sourceTree = "<group>";
-		};
-		F48B31C8175B2FDF00118881 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				F48B31C9175B2FDF00118881 /* maki-icons.svg */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		F48B31CA175B2FDF00118881 /* www */ = {
-			isa = PBXGroup;
-			children = (
-				F48B31CB175B2FDF00118881 /* images */,
-				F48B31DB175B2FDF00118881 /* maki-sprite.css */,
-				F48B31DC175B2FDF00118881 /* maki.json */,
-				F48B31DD175B2FDF00118881 /* site.css */,
-				F48B31DE175B2FDF00118881 /* site.js */,
-			);
-			path = www;
-			sourceTree = "<group>";
-		};
-		F48B31CB175B2FDF00118881 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				F48B31CC175B2FDF00118881 /* bg.png */,
-				F48B31CD175B2FDF00118881 /* bg.svg */,
-				F48B31CE175B2FDF00118881 /* dotgrid-pattern.png */,
-				F48B31CF175B2FDF00118881 /* maki-preview-12.png */,
-				F48B31D0175B2FDF00118881 /* maki-preview-12@2x.png */,
-				F48B31D1175B2FDF00118881 /* maki-preview-18.png */,
-				F48B31D2175B2FDF00118881 /* maki-preview-18@2x.png */,
-				F48B31D3175B2FDF00118881 /* maki-preview-24.png */,
-				F48B31D4175B2FDF00118881 /* maki-preview-24@2x.png */,
-				F48B31D5175B2FDF00118881 /* maki-preview-bg.png */,
-				F48B31D6175B2FDF00118881 /* maki-sprite.png */,
-				F48B31D7175B2FDF00118881 /* maki-sprite@2x.png */,
-				F48B31D8175B2FDF00118881 /* sprite.png */,
-				F48B31D9175B2FDF00118881 /* sprite.svg */,
-				F48B31DA175B2FDF00118881 /* sprite@2x.png */,
-			);
-			path = images;
+			name = renders;
+			path = "mapbox-maki-942d39d/renders";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1224,24 +1055,6 @@
 				F40A13E9175A83A8001698EB /* Default-568h@2x.png in Resources */,
 				F40A13EF175A83A8001698EB /* ViewController.xib in Resources */,
 				ECDF8C63175A99BC0079858C /* ReportViewController.xib in Resources */,
-				F48B31DF175B2FDF00118881 /* .gitignore in Resources */,
-				F48B31E0175B2FDF00118881 /* .npmignore in Resources */,
-				F48B31E1175B2FDF00118881 /* _config.yml in Resources */,
-				F48B31E2175B2FDF00118881 /* default.html in Resources */,
-				F48B31E3175B2FDF00118881 /* maki.ServerStyle in Resources */,
-				F48B31E4175B2FDF00118881 /* maki.style in Resources */,
-				F48B31E5175B2FDF00118881 /* README.markdown in Resources */,
-				F48B31E6175B2FDF00118881 /* index.html in Resources */,
-				F48B31E7175B2FDF00118881 /* LICENSE.txt in Resources */,
-				F48B31E8175B2FDF00118881 /* package.json in Resources */,
-				F48B31E9175B2FDF00118881 /* image1.png in Resources */,
-				F48B31EA175B2FDF00118881 /* image2.png in Resources */,
-				F48B31EB175B2FDF00118881 /* image3.png in Resources */,
-				F48B31EC175B2FDF00118881 /* image4.png in Resources */,
-				F48B31ED175B2FDF00118881 /* image5.png in Resources */,
-				F48B31EE175B2FDF00118881 /* image6.png in Resources */,
-				F48B31EF175B2FDF00118881 /* maki-blogpost.svg in Resources */,
-				F48B31F0175B2FDF00118881 /* README.markdown in Resources */,
 				F48B31F1175B2FDF00118881 /* airfield-12.png in Resources */,
 				F48B31F2175B2FDF00118881 /* airfield-18.png in Resources */,
 				F48B31F3175B2FDF00118881 /* airfield-24.png in Resources */,
@@ -1521,25 +1334,6 @@
 				F48B3305175B2FDF00118881 /* zoo-12.png in Resources */,
 				F48B3306175B2FDF00118881 /* zoo-18.png in Resources */,
 				F48B3307175B2FDF00118881 /* zoo-24.png in Resources */,
-				F48B3308175B2FDF00118881 /* maki-icons.svg in Resources */,
-				F48B3309175B2FDF00118881 /* bg.png in Resources */,
-				F48B330A175B2FDF00118881 /* bg.svg in Resources */,
-				F48B330B175B2FDF00118881 /* dotgrid-pattern.png in Resources */,
-				F48B330C175B2FDF00118881 /* maki-preview-12.png in Resources */,
-				F48B330D175B2FDF00118881 /* maki-preview-12@2x.png in Resources */,
-				F48B330E175B2FDF00118881 /* maki-preview-18.png in Resources */,
-				F48B330F175B2FDF00118881 /* maki-preview-18@2x.png in Resources */,
-				F48B3310175B2FDF00118881 /* maki-preview-24.png in Resources */,
-				F48B3311175B2FDF00118881 /* maki-preview-24@2x.png in Resources */,
-				F48B3312175B2FDF00118881 /* maki-preview-bg.png in Resources */,
-				F48B3313175B2FDF00118881 /* maki-sprite.png in Resources */,
-				F48B3314175B2FDF00118881 /* maki-sprite@2x.png in Resources */,
-				F48B3315175B2FDF00118881 /* sprite.png in Resources */,
-				F48B3316175B2FDF00118881 /* sprite.svg in Resources */,
-				F48B3317175B2FDF00118881 /* sprite@2x.png in Resources */,
-				F48B3318175B2FDF00118881 /* maki-sprite.css in Resources */,
-				F48B3319175B2FDF00118881 /* maki.json in Resources */,
-				F48B331A175B2FDF00118881 /* site.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1588,7 +1382,6 @@
 				EC4FA778175AA6F200C7E351 /* Incident.m in Sources */,
 				EC4FA77D175ACFD200C7E351 /* IncidentManager.m in Sources */,
 				F48B3099175B1BFE00118881 /* CCMarker.m in Sources */,
-				F48B331B175B2FDF00118881 /* site.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
