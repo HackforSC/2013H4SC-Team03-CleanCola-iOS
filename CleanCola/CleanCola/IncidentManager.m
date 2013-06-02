@@ -11,6 +11,31 @@
 @implementation IncidentManager
 @synthesize _reloading, delegate;
 
+-(id)init{
+    self = [super init];
+    RKObjectMapping *postObjectMapping = [RKObjectMapping requestMapping];
+    [postObjectMapping addAttributeMappingsFromDictionary:@{
+     @"description": @"description",
+     @"latitude": @"latitude",
+     @"longitude": @"longitude",
+     @"category_id": @"category_id",
+     @"incident_id": @"id",
+     @"title": @"title",
+     @"date_created" :@"date_created",
+     @"is_flagged": @"is_flagged",
+     @"is_closed": @"is_closed",
+     @"votes":@"votes"
+     }];
+    
+    RKRequestDescriptor *requestDescriptor = [RKRequestDescriptor requestDescriptorWithMapping:postObjectMapping
+                                                                                   objectClass:[Incident class] rootKeyPath:nil];
+    
+    [[RKObjectManager sharedManager] addRequestDescriptor: requestDescriptor];
+    
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:postObjectMapping pathPattern:nil keyPath:@"incidents" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    
+    return self;
+}
 - (void)loadIncidentsWithLocation
 {
     RKObjectMapping* incidentMapping = [RKObjectMapping mappingForClass:[Incident class]];
@@ -42,29 +67,76 @@
     [self loadIncidentsWithLocation];
 }
 
--(void)makeNewReportWithIncident:(Incident *)inc 
+-(void)makeNewReportWithIncident:(Incident *)inc Image:(UIImage *)image
 {
-    RKObjectMapping *postObjectMapping = [RKObjectMapping requestMapping];
-    [postObjectMapping addAttributeMappingsFromDictionary:@{
-     @"date_created": @"date_created",
-     @"description": @"description",
-     @"incident_id": @"incident_id",
-     @"latitude": @"latitude",
-     @"longitude": @"longitude",
-     @"category_id": @"category_id",
-     @"image": @"image;"
-     }];
     
-    RKRequestDescriptor *requestDescriptor = [RKRequestDescriptor requestDescriptorWithMapping:postObjectMapping
-                                                                                   objectClass:[Incident class] rootKeyPath:nil];
-    
-    [[RKObjectManager sharedManager] addRequestDescriptor: requestDescriptor];
-    
-
     //RKLogConfigureByName("RestKit", RKLogLevelWarning);
     //RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
     RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
 
-    [[RKObjectManager sharedManager] postObject:inc path:@"/incidents" parameters:nil success:nil failure:nil];
+    [[RKObjectManager sharedManager] postObject:inc path:@"/incidents" parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        [self saveImage:image Incident: mappingResult.array];
+    }failure:nil];
+    
+    
+    
+    
+//    RKObjectManager *objectManager = [RKObjectManager sharedManager];
+//    NSMutableURLRequest *request =
+//    [objectManager multipartFormRequestWithObject:inc method:RKRequestMethodPOST
+//                                             path:@"/incidents" parameters:nil
+//                        constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
+//     {
+//         [formData appendPartWithFileData:UIImageJPEGRepresentation(image, 0.5)
+//                                              name:@"image"
+//                                          fileName:@"photo.png"
+//                                          mimeType:@"image/png"];
+//     }];
+//    RKObjectRequestOperation *operation =
+//    [objectManager objectRequestOperationWithRequest:request
+//                                             success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult)
+//     {
+//         // Success handler.
+//         NSLog(@"%@", [mappingResult firstObject]);
+//     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+//         // Error handler.
+//     }];
+//    
+//    [[RKObjectManager sharedManager] enqueueObjectRequestOperation:operation]; // NOTE: Must be enqueued rather than started
+//    
+//    
+//    
+    
+    
+    
+    
 }
+
+-(void)saveImage:(UIImage *)image Incident:(NSArray *)inc{
+    
+    
+    // Configure a request mapping
+    // Shortcut for [RKObjectMapping mappingForClass:[NSMutableDictionary class] ]
+    RKObjectMapping* chalkboardeRequestMapping = [RKObjectMapping requestMapping ];
+    //    [chalkboardeRequestMapping addAttributeMappingsFromArray:@[ @"imageData" ]];
+    
+    // Now configure the request descriptor
+    RKRequestDescriptor *requestDescriptor2 = [RKRequestDescriptor requestDescriptorWithMapping:chalkboardeRequestMapping objectClass:[Incident class] rootKeyPath:@"incident"];
+    NSString *path = @"";
+    for (Incident *In in inc) {
+        NSString *path = [[NSString alloc]initWithFormat:@"/incidents/%@/images", In.incident_id ];
+    }
+    // Serialize the Article attributes then attach a file
+    NSMutableURLRequest *request = [[RKObjectManager sharedManager] multipartFormRequestWithObject:self method:RKRequestMethodPOST path:path parameters:nil constructingBodyWithBlock: ^(id<AFMultipartFormData> formData) {
+        [formData appendPartWithFileData:UIImageJPEGRepresentation(image, 0.5)
+                                    name:@"image"
+                                fileName:@"photo.png"
+                                mimeType:@"image/png"];
+    }];
+    
+    RKObjectRequestOperation *operation = [[RKObjectManager sharedManager] objectRequestOperationWithRequest:request success:nil failure:nil];
+    [[RKObjectManager sharedManager] enqueueObjectRequestOperation:operation]; // NOTE: Must be enqueued rather than started
+    
+}
+
 @end

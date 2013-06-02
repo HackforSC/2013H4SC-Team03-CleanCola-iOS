@@ -41,11 +41,11 @@
     IncidentManager *im = [[IncidentManager alloc]init];
     inc.description = self.description.text;
     inc.title = self.reportTitle.text;
-    inc.latitude = @"0";
-    inc.longitude = @"0";
-    inc.category_id = @"1";
-    inc.image = self.userImage;
-    [im makeNewReportWithIncident:inc];
+    inc.latitude = @"34.0006";
+    inc.longitude = @"-81.0350";
+    inc.category_id = @"0";
+    //inc.image = self.userImage;
+    [im makeNewReportWithIncident:inc Image:self.userImage];
     [self dismissViewControllerAnimated:YES completion:nil];
 
 }
