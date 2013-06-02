@@ -200,19 +200,19 @@
         CCMarker *marker = [[CCMarker alloc] initWithMapView:self.mapView coordinate:CLLocationCoordinate2DMake([In.latitude floatValue], [In.longitude floatValue]) andTitle:In.description];
         marker.incident_id = In.incident_id;
         
-        RMMarker *image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"marker" tintColor:[UIColor asbestosColor]];
+        RMMarker *image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor redColor]];
         
         switch ([In.category_id intValue]) {
             case 2:
-                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"marker" tintColor:[UIColor asbestosColor]];
+                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor blueColor]];
                 break;
                 
             case 3:
-                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"marker" tintColor:[UIColor sunflowerColor]];
+                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor greenColor]];
                 break;
                 
             default:
-                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"marker" tintColor:[UIColor wetAsphaltColor]];
+                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor yellowColor]];
                 break;
         }
         
@@ -221,6 +221,12 @@
         [self.mapView addAnnotation: marker];
     }
     //NSLog(@"%@",incidents);
+}
+
+- (void)mapView:(RMMapView *)mapView didSelectAnnotation:(RMAnnotation *)annotation
+{
+    CCMarker *marker = annotation;
+    
 }
 
 @end

@@ -305,6 +305,8 @@
 		F48B3305175B2FDF00118881 /* zoo-12.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31C5175B2FDF00118881 /* zoo-12.png */; };
 		F48B3306175B2FDF00118881 /* zoo-18.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31C6175B2FDF00118881 /* zoo-18.png */; };
 		F48B3307175B2FDF00118881 /* zoo-24.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31C7175B2FDF00118881 /* zoo-24.png */; };
+		F48B331F175B352D00118881 /* IncidentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B331D175B352D00118881 /* IncidentViewController.m */; };
+		F48B3320175B352D00118881 /* IncidentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48B331E175B352D00118881 /* IncidentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -615,6 +617,9 @@
 		F48B31C5175B2FDF00118881 /* zoo-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoo-12.png"; sourceTree = "<group>"; };
 		F48B31C6175B2FDF00118881 /* zoo-18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoo-18.png"; sourceTree = "<group>"; };
 		F48B31C7175B2FDF00118881 /* zoo-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoo-24.png"; sourceTree = "<group>"; };
+		F48B331C175B352D00118881 /* IncidentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncidentViewController.h; sourceTree = "<group>"; };
+		F48B331D175B352D00118881 /* IncidentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncidentViewController.m; sourceTree = "<group>"; };
+		F48B331E175B352D00118881 /* IncidentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncidentViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -682,6 +687,9 @@
 				F40A13EA175A83A8001698EB /* ViewController.h */,
 				F40A13EB175A83A8001698EB /* ViewController.m */,
 				F40A13ED175A83A8001698EB /* ViewController.xib */,
+				F48B331C175B352D00118881 /* IncidentViewController.h */,
+				F48B331D175B352D00118881 /* IncidentViewController.m */,
+				F48B331E175B352D00118881 /* IncidentViewController.xib */,
 				F48B3097175B1BFD00118881 /* CCMarker.h */,
 				F48B3098175B1BFE00118881 /* CCMarker.m */,
 				F40A13D9175A83A8001698EB /* Supporting Files */,
@@ -1334,6 +1342,7 @@
 				F48B3305175B2FDF00118881 /* zoo-12.png in Resources */,
 				F48B3306175B2FDF00118881 /* zoo-18.png in Resources */,
 				F48B3307175B2FDF00118881 /* zoo-24.png in Resources */,
+				F48B3320175B352D00118881 /* IncidentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1382,6 +1391,7 @@
 				EC4FA778175AA6F200C7E351 /* Incident.m in Sources */,
 				EC4FA77D175ACFD200C7E351 /* IncidentManager.m in Sources */,
 				F48B3099175B1BFE00118881 /* CCMarker.m in Sources */,
+				F48B331F175B352D00118881 /* IncidentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

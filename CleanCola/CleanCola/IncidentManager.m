@@ -17,7 +17,8 @@
     [incidentMapping addAttributeMappingsFromDictionary:@{
      @"date_created": @"date_created",
      @"description": @"description",
-     @"incident_id": @"incident_id",
+     @"id": @"incident_id",
+     @"category_id" : @"category_id",
      @"latitude": @"latitude",
      @"longitude": @"longitude"
      }];
