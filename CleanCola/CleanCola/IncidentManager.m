@@ -13,26 +13,7 @@
 
 -(id)init{
     self = [super init];
-    RKObjectMapping *postObjectMapping = [RKObjectMapping requestMapping];
-    [postObjectMapping addAttributeMappingsFromDictionary:@{
-     @"description": @"description",
-     @"latitude": @"latitude",
-     @"longitude": @"longitude",
-     @"category_id": @"category_id",
-     @"incident_id": @"id",
-     @"title": @"title",
-     @"date_created" :@"date_created",
-     @"is_flagged": @"is_flagged",
-     @"is_closed": @"is_closed",
-     @"votes":@"votes"
-     }];
-    
-    RKRequestDescriptor *requestDescriptor = [RKRequestDescriptor requestDescriptorWithMapping:postObjectMapping
-                                                                                   objectClass:[Incident class] rootKeyPath:nil];
-    
-    [[RKObjectManager sharedManager] addRequestDescriptor: requestDescriptor];
-    
-    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:postObjectMapping pathPattern:nil keyPath:@"incidents" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+
     
     return self;
 }
@@ -104,25 +85,7 @@
 
 -(void)makeNewReportWithIncident:(Incident *)inc Image:(UIImage *)image
 {
-    RKObjectMapping* incidentMapping = [RKObjectMapping mappingForClass:[Incident class]];
-    [incidentMapping addAttributeMappingsFromDictionary:@{
-     @"date_created": @"date_created",
-     @"title" : @"title",
-     @"description": @"description",
-     @"id": @"incident_id",
-     @"category_id" : @"category_id",
-     @"date_created" : @"date_created",
-     @"votes" : @"votes",
-     @"is_closed" : @"is_closed",
-     @"is_flagged" : @"is_flagged",
-     @"votes" :@"votes",
-     @"latitude": @"latitude",
-     @"longitude": @"longitude"
-     }];
     
-    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:incidentMapping pathPattern:@"/incidents" keyPath:@"incident" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
-
-    [[RKObjectManager sharedManager] addResponseDescriptor:responseDescriptor];
 
     //RKLogConfigureByName("RestKit", RKLogLevelWarning);
     //RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
@@ -168,7 +131,7 @@
 
 -(void)saveImage:(UIImage *)image Incident:(NSArray *)inc{
     
-    self.userImage = image;;
+    self.userImage = image;
     // Configure a request mapping
     // Shortcut for [RKObjectMapping mappingForClass:[NSMutableDictionary class] ]
     //RKObjectMapping* chalkboardeRequestMapping = [RKObjectMapping requestMapping ];

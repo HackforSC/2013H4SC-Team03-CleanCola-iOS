@@ -23,6 +23,48 @@
     // Initialize RestKit
     RKObjectManager* objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://api.cleancola.org"]];
     
+    RKObjectMapping *postObjectMapping = [RKObjectMapping requestMapping];
+    [postObjectMapping addAttributeMappingsFromDictionary:@{
+     @"description": @"description",
+     @"latitude": @"latitude",
+     @"longitude": @"longitude",
+     @"category_id": @"category_id",
+     @"incident_id": @"id",
+     @"title": @"title",
+     @"date_created" :@"date_created",
+     @"is_flagged": @"is_flagged",
+     @"is_closed": @"is_closed",
+     @"votes":@"votes"
+     }];
+    
+    RKRequestDescriptor *requestDescriptor = [RKRequestDescriptor requestDescriptorWithMapping:postObjectMapping
+                                                                                   objectClass:[Incident class] rootKeyPath:nil];
+    
+    [[RKObjectManager sharedManager] addRequestDescriptor: requestDescriptor];
+    
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:postObjectMapping pathPattern:nil keyPath:@"incidents" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    
+    
+    RKObjectMapping* incidentMapping = [RKObjectMapping mappingForClass:[Incident class]];
+    [incidentMapping addAttributeMappingsFromDictionary:@{
+     @"date_created": @"date_created",
+     @"title" : @"title",
+     @"description": @"description",
+     @"id": @"incident_id",
+     @"category_id" : @"category_id",
+     @"date_created" : @"date_created",
+     @"votes" : @"votes",
+     @"is_closed" : @"is_closed",
+     @"is_flagged" : @"is_flagged",
+     @"votes" :@"votes",
+     @"latitude": @"latitude",
+     @"longitude": @"longitude"
+     }];
+    
+    RKResponseDescriptor *responseDescriptor3 = [RKResponseDescriptor responseDescriptorWithMapping:incidentMapping pathPattern:@"/incidents" keyPath:@"incident" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    
+    [[RKObjectManager sharedManager] addResponseDescriptor:responseDescriptor3];
+    
 //    RKManagedObjectStore *managedObjectStore = [RKManagedObjectStore defaultStore];
 //    objectManager.managedObjectStore = managedObjectStore;
 //    
