@@ -98,6 +98,17 @@
         {
             self.is_flagged = NO;
         }
+        if(In.medium_url){
+            NSURL *dataUrl = [[NSURL alloc] initWithString:special.medium_url];
+            NSData *data = [[NSData alloc] initWithContentsOfURL:dataUrl];
+            mainImage = [[UIImage alloc] initWithData:data];
+            self.specialImage.layer.shadowColor = [UIColor blackColor].CGColor;
+            self.specialImage.layer.shadowOffset = CGSizeMake(0, 1);
+            self.specialImage.layer.shadowOpacity = 1;
+            self.specialImage.layer.shadowRadius = 5.0;
+            self.specialImage.clipsToBounds = NO;
+            [self.specialImage setImage:mainImage];
+            
     }
     self.title = self.incident_title;
     self.votesLbl.text = [NSString stringWithFormat:@"%d", self.votes];

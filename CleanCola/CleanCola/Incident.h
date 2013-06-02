@@ -17,7 +17,7 @@
 @property (nonatomic, copy) NSString* latitude;
 @property (nonatomic, copy) NSString* longitude;
 @property (nonatomic, assign) int votes;
-@property (nonatomic, copy) UIImage* image;
+@property (nonatomic, copy) NSString* image_src;
 
 @property (nonatomic, strong) NSDate* date_created;
 @property (nonatomic, strong) NSDate* is_closed;
