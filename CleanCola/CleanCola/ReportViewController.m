@@ -27,6 +27,21 @@
 {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor cloudsColor];
+    
+    self.self.submitButton.buttonColor = [UIColor emerlandColor];
+    self.self.submitButton.shadowColor = [UIColor nephritisColor];
+    self.self.submitButton.shadowHeight = 3.0f;
+    self.self.submitButton.cornerRadius = 6.0f;
+    self.self.submitButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [self.self.submitButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [self.self.submitButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    [self.navBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
+    
+    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor peterRiverColor]
+                                  highlightedColor:[UIColor belizeHoleColor]
+                                      cornerRadius:3
+                                   whenContainedIn:[self class]];
 }
 
 - (void)viewDidAppear:(BOOL)animated
