@@ -33,6 +33,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    self.view.backgroundColor = [UIColor cloudsColor];
+    
+    self.closeButton.buttonColor = [UIColor turquoiseColor];
+    self.closeButton.shadowColor = [UIColor greenSeaColor];
+    self.closeButton.shadowHeight = 3.0f;
+    self.closeButton.cornerRadius = 6.0f;
+    self.closeButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [self.closeButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [self.closeButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    
+    self.votesLbl.font = [UIFont boldFlatFontOfSize:20.0];
+    
+    self.dateLbl.font = [UIFont flatFontOfSize:17.0];
+    
+    self.descrLbl.font = [UIFont flatFontOfSize:17.0];
+    
+    [self.stepper configureFlatStepperWithColor:[UIColor nephritisColor] highlightedColor:[UIColor nephritisColor] disabledColor:[UIColor emerlandColor] iconColor:[UIColor cloudsColor]];
+    
+    [self.navBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
+    
+    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor peterRiverColor]
+                                  highlightedColor:[UIColor belizeHoleColor]
+                                      cornerRadius:3
+                                   whenContainedIn:[self class]];
     
 }
 
@@ -72,7 +96,15 @@
             self.is_flagged = NO;
         }
     }
-    
+    self.title = self.incident_title;
+    self.votesLbl.text = [NSString stringWithFormat:@"%d", self.votes];
+    self.dateLbl.text = [NSDate stringForDisplayFromDate:self.date_created];
+    self.descrLbl.text = self.description;
+}
+
+- (IBAction)close:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

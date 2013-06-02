@@ -307,6 +307,7 @@
 		F48B3307175B2FDF00118881 /* zoo-24.png in Resources */ = {isa = PBXBuildFile; fileRef = F48B31C7175B2FDF00118881 /* zoo-24.png */; };
 		F48B331F175B352D00118881 /* IncidentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B331D175B352D00118881 /* IncidentViewController.m */; };
 		F48B3320175B352D00118881 /* IncidentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48B331E175B352D00118881 /* IncidentViewController.xib */; };
+		F48B3323175B571700118881 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B3322175B571700118881 /* NSDate+Helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -620,6 +621,8 @@
 		F48B331C175B352D00118881 /* IncidentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncidentViewController.h; sourceTree = "<group>"; };
 		F48B331D175B352D00118881 /* IncidentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncidentViewController.m; sourceTree = "<group>"; };
 		F48B331E175B352D00118881 /* IncidentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncidentViewController.xib; sourceTree = "<group>"; };
+		F48B3321175B571700118881 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		F48B3322175B571700118881 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -680,6 +683,8 @@
 		F40A13D8175A83A8001698EB /* CleanCola */ = {
 			isa = PBXGroup;
 			children = (
+				F48B3321175B571700118881 /* NSDate+Helper.h */,
+				F48B3322175B571700118881 /* NSDate+Helper.m */,
 				F48B30B0175B2FDE00118881 /* renders */,
 				EC4FA775175AA6A800C7E351 /* Model */,
 				F40A13E1175A83A8001698EB /* AppDelegate.h */,
@@ -1392,6 +1397,7 @@
 				EC4FA77D175ACFD200C7E351 /* IncidentManager.m in Sources */,
 				F48B3099175B1BFE00118881 /* CCMarker.m in Sources */,
 				F48B331F175B352D00118881 /* IncidentViewController.m in Sources */,
+				F48B3323175B571700118881 /* NSDate+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

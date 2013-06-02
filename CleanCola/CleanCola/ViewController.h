@@ -14,6 +14,8 @@
 #import <FlatUIKit/UIColor+FlatUI.h>
 #import <FlatUIKit/UIFont+FlatUI.h>
 #import <FlatUIKit/UIImage+FlatUI.h>
+#import <FlatUIKit/UINavigationBar+FlatUI.h>
+#import <FlatUIKit/UIBarButtonItem+FlatUI.h>
 #import "IncidentManager.h"
 #import "CCMarker.h"
 
