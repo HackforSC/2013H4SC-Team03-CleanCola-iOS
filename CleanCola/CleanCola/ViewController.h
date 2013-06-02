@@ -29,5 +29,6 @@
 @property (nonatomic, strong) IBOutlet FUIButton *refineButton;
 
 - (IBAction)openReportView:(id)sender;
+- (IBAction)refineMapItems:(id)sender;
 
 @end

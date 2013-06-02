@@ -66,7 +66,7 @@
     IManager = [[IncidentManager alloc]init];
     IManager.delegate = self;
     [IManager refreshIncidents];
-    [self startLocatingUser];
+    //[self startLocatingUser];
 }
 
 -(RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation {
