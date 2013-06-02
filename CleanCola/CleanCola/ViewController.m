@@ -48,16 +48,16 @@
     NSLog(@"%f", self.mapView.centerCoordinate.latitude);
     NSLog(@"%f", self.mapView.centerCoordinate.longitude);
     
-    _mybutton.buttonColor = [UIColor turquoiseColor];
-    _mybutton.shadowColor = [UIColor greenSeaColor];
+    _mybutton.buttonColor = [UIColor emerlandColor];
+    _mybutton.shadowColor = [UIColor nephritisColor];
     _mybutton.shadowHeight = 3.0f;
     _mybutton.cornerRadius = 0.0f;
     _mybutton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
     [_mybutton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
     [_mybutton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
 
-    _refineButton.buttonColor = [UIColor amethystColor];
-    _refineButton.shadowColor = [UIColor wisteriaColor];
+    _refineButton.buttonColor = [UIColor peterRiverColor];
+    _refineButton.shadowColor = [UIColor belizeHoleColor];
     _refineButton.shadowHeight = 3.0f;
     _refineButton.cornerRadius = 0.0f;
     _refineButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
@@ -202,20 +202,6 @@
         marker.incident_id = In.incident_id;
         
         RMMarker *image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor redColor]];
-        
-        switch ([In.category_id intValue]) {
-            case 2:
-                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor blueColor]];
-                break;
-                
-            case 3:
-                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor greenColor]];
-                break;
-                
-            default:
-                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor yellowColor]];
-                break;
-        }
         
         [marker setLayer:image];
         

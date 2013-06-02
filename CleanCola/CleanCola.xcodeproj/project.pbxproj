@@ -308,6 +308,7 @@
 		F48B331F175B352D00118881 /* IncidentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B331D175B352D00118881 /* IncidentViewController.m */; };
 		F48B3320175B352D00118881 /* IncidentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48B331E175B352D00118881 /* IncidentViewController.xib */; };
 		F48B3323175B571700118881 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B3322175B571700118881 /* NSDate+Helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F48B3326175B6EDE00118881 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B3325175B6EDE00118881 /* Image.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -623,6 +624,8 @@
 		F48B331E175B352D00118881 /* IncidentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncidentViewController.xib; sourceTree = "<group>"; };
 		F48B3321175B571700118881 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
 		F48B3322175B571700118881 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		F48B3324175B6EDE00118881 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		F48B3325175B6EDE00118881 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -646,6 +649,8 @@
 			children = (
 				EC4FA776175AA6F200C7E351 /* Incident.h */,
 				EC4FA777175AA6F200C7E351 /* Incident.m */,
+				F48B3324175B6EDE00118881 /* Image.h */,
+				F48B3325175B6EDE00118881 /* Image.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1398,6 +1403,7 @@
 				F48B3099175B1BFE00118881 /* CCMarker.m in Sources */,
 				F48B331F175B352D00118881 /* IncidentViewController.m in Sources */,
 				F48B3323175B571700118881 /* NSDate+Helper.m in Sources */,
+				F48B3326175B6EDE00118881 /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

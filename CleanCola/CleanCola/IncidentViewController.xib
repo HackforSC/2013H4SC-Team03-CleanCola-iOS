@@ -44,7 +44,7 @@
 					<object class="IBUIImageView" id="931239329">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 110}, {280, 189}}</string>
+						<string key="NSFrame">{{20, 110}, {280, 250}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="262106225"/>
@@ -159,7 +159,7 @@
 					<object class="IBUILabel" id="262106225">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 307}, {280, 167}}</string>
+						<string key="NSFrame">{{20, 381}, {280, 83}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="221204680"/>
@@ -179,7 +179,7 @@
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 						<double key="preferredMaxLayoutWidth">280</double>
 					</object>
-					<object class="IBUINavigationBar" id="225907311">
+					<object class="IBUINavigationBar" id="85408085">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">290</int>
 						<string key="NSFrameSize">{320, 44}</string>
@@ -188,13 +188,13 @@
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<array class="NSMutableArray" key="IBUIItems">
-							<object class="IBUINavigationItem" id="406825208">
-								<reference key="IBUINavigationBar" ref="225907311"/>
+							<object class="IBUINavigationItem" id="85827582">
+								<reference key="IBUINavigationBar" ref="85408085"/>
 								<string key="IBUITitle">Title</string>
-								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="786707512">
+								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="580842742">
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">1</int>
-									<reference key="IBUINavigationItem" ref="406825208"/>
+									<reference key="IBUINavigationItem" ref="85827582"/>
 									<int key="IBUISystemItemIdentifier">0</int>
 								</object>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -296,7 +296,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">navBar</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="225907311"/>
+						<reference key="destination" ref="85408085"/>
 					</object>
 					<int key="connectionID">35</int>
 				</object>
@@ -304,14 +304,32 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">barButton</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="786707512"/>
+						<reference key="destination" ref="580842742"/>
 					</object>
 					<int key="connectionID">36</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">valueChanged:</string>
+						<reference key="source" ref="845269763"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">38</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">taskCompleted:</string>
+						<reference key="source" ref="221204680"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">39</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">close:</string>
-						<reference key="source" ref="786707512"/>
+						<reference key="source" ref="580842742"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">37</int>
@@ -333,9 +351,9 @@
 							<reference ref="966160473"/>
 							<reference ref="885733071"/>
 							<reference ref="221204680"/>
-							<reference ref="262106225"/>
 							<reference ref="845269763"/>
-							<reference ref="225907311"/>
+							<reference ref="85408085"/>
+							<reference ref="262106225"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -383,24 +401,24 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">31</int>
-						<reference key="object" ref="225907311"/>
+						<reference key="object" ref="85408085"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="406825208"/>
+							<reference ref="85827582"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">33</int>
-						<reference key="object" ref="406825208"/>
+						<reference key="object" ref="85827582"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="786707512"/>
+							<reference ref="580842742"/>
 						</array>
-						<reference key="parent" ref="225907311"/>
+						<reference key="parent" ref="85408085"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">34</int>
-						<reference key="object" ref="786707512"/>
-						<reference key="parent" ref="406825208"/>
+						<reference key="object" ref="580842742"/>
+						<reference key="parent" ref="85827582"/>
 					</object>
 				</array>
 			</object>
@@ -425,7 +443,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">37</int>
+			<int key="maxID">39</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -440,17 +458,25 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">IncidentViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">close:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">close:</string>
-						<object class="IBActionInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="close:">id</string>
+						<string key="taskCompleted:">id</string>
+						<string key="valueChanged:">UIStepper</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="close:">
 							<string key="name">close:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</object>
+						<object class="IBActionInfo" key="taskCompleted:">
+							<string key="name">taskCompleted:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="valueChanged:">
+							<string key="name">valueChanged:</string>
+							<string key="candidateClassName">UIStepper</string>
+						</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="barButton">UIBarButtonItem</string>
 						<string key="closeButton">FUIButton</string>
