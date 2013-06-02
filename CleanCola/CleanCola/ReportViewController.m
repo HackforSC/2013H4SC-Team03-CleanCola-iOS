@@ -27,46 +27,16 @@
 {
     [super viewDidLoad];
     
-    [self startCamera];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-- (void)startCamera
-{
-    UIImagePickerController *imagePickController=[[UIImagePickerController alloc]init];
-    imagePickController.sourceType=UIImagePickerControllerSourceTypeCamera;
-    imagePickController.delegate=self;
-    imagePickController.allowsEditing=NO;
-    [self presentViewController:imagePickController animated:TRUE completion:nil];
-}
-
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo NS_DEPRECATED_IOS(2_0, 3_0)
+- (void)viewDidAppear:(BOOL)animated
 {
     
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    //UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    
-    
-    //NSData* imageData = UIImagePNGRepresentation(image);
-    
-    //Chalkboard *newBoard = [[Chalkboard alloc]init];
-    
-    //[newBoard PostNewChalkboardWithImage:image];
-    //[self dismissModalViewControllerAnimated:YES];
-}
 
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
-    
-}
 
+- (IBAction)cancelButton:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

@@ -10,4 +10,5 @@
 
 @interface ReportViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+- (IBAction)cancelButton:(id)sender;
 @end

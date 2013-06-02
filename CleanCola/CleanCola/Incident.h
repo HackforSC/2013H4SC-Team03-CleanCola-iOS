@@ -7,32 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <RestKit/RestKit.h>
 
+@interface Incident : NSObject
 
-@protocol IncidentDelegate <NSObject>
+@property (nonatomic, copy) NSString* incident_id;
+@property (nonatomic, copy) NSString* description;
+@property (nonatomic, copy) NSString* latitude;
+@property (nonatomic, copy) NSString* longitude;
+@property (nonatomic, strong) NSDate*   date_created;
 
-@required
-- (void)didLoadWithError:(NSError *)error;
-
-@optional
-//- (void)didLoadIncident:(Incident *)incident;
-- (void)didLoadIncidents:(NSArray *)incidents;
-
-@end
-
-@interface Incident : NSObject{
-    BOOL _reloading;
-}
-
-
-@property (nonatomic, retain) id <IncidentDelegate> delegate;
-@property (nonatomic) BOOL _reloading;
-
-//-(void)loadSpecialsWithLocation:(CGPoint)location distance:(NSNumber *)distance;
-//-(void)loadSpecialsWithLocation:(CGPoint)location distance:(NSNumber *)distance day:(NSString*)day;
-//-(void)loadSpecialWithSpecialID:(NSString *)specialID;
-//-(void)loadSpecialsWithRestaurantID:(NSString *)restaurantID;
-
--(void)refreshSpecials;
 @end

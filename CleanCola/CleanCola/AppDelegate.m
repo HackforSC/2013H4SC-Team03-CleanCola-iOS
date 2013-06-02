@@ -21,8 +21,24 @@
     [self.window makeKeyAndVisible];
     
     // Initialize RestKit
-    RKObjectManager* objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://api.cleancola.org"]];
+    RKObjectManager* objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://api.cleancola.org/vi"]];
     
+//    RKManagedObjectStore *managedObjectStore = [RKManagedObjectStore defaultStore];
+//    objectManager.managedObjectStore = managedObjectStore;
+//    
+//    [RKObjectManager setSharedManager:objectManager];
+//    
+//    RKEntityMapping *entityMapping = [RKEntityMapping mappingForEntityForName:@"incidents" inManagedObjectStore:managedObjectStore];
+//    [entityMapping addAttributeMappingsFromDictionary:@{
+//     @"date_created": @"date_created",
+//     @"description": @"description",
+//     @"incident_id": @"incident_id",
+//     @"latitude": @"latitude",
+//     @"longitude": @"longitude"}];
+//    
+//    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:entityMapping pathPattern:@"/incidents" keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+//    
+//    [objectManager addResponseDescriptor:responseDescriptor];
     return YES;
 }
 

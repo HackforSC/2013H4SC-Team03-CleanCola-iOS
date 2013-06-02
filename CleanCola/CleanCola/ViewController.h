@@ -14,12 +14,14 @@
 #import <FlatUIKit/UIColor+FlatUI.h>
 #import <FlatUIKit/UIFont+FlatUI.h>
 #import <FlatUIKit/UIImage+FlatUI.h>
+#import "IncidentManager.h"
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate>{
+@interface ViewController : UIViewController <CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, IncidentDelegate, RMMapViewDelegate>{
     CLLocationManager *CLController;
     BOOL noLocation;
     BOOL useNearbyLocation;
     CGPoint lastLocation;
+    IncidentManager *IManager;
 }
 
 @property (nonatomic, strong) RMMapView *mapView;

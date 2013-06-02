@@ -9,5 +9,7 @@
 #import "Incident.h"
 
 @implementation Incident
+@synthesize description,date_created,incident_id,latitude,longitude;
+
 
 @end

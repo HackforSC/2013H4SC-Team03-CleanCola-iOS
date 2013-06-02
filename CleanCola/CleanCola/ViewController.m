@@ -25,10 +25,17 @@
     CLController.distanceFilter = 500;
     
     RMMapBoxSource *source = [[RMMapBoxSource alloc] initWithMapID:@"cleancola.map-rmhk6v1q"];
+    
     self.mapView = [[RMMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height/3*2) andTilesource:source];
     [self.view addSubview:self.mapView];
+    [self.mapView setDelegate:self];
+    self.mapView.zoom = 12;
+    self.mapView.userTrackingMode = RMUserTrackingModeFollow;
     
-    self.mapView.zoom = 11.5;
+    RMPointAnnotation *ann = [[RMPointAnnotation alloc] initWithMapView:self.mapView
+                                                             coordinate:CLLocationCoordinate2DMake(48.839238, 2.337383)
+                                                               andTitle:@"Here it is"];
+    [self.mapView addAnnotation:ann];
     
     CLLocationDegrees latitude = 34.002;
     CLLocationDegrees longitude = -81.03;
@@ -47,8 +54,18 @@
     _myButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
     [_myButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
     [_myButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    
+    IManager = [[IncidentManager alloc]init];
+    IManager.delegate = self;
+    [IManager refreshIncidents];
+    [self startLocatingUser];
 }
 
+-(RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation {
+    NSLog(@"Marker is called!"); //Is not outputted so this method is never called.
+    RMMarker *marker = [[RMMarker alloc] initWithMapBoxMarkerImage:@"marker/pin-l-bus+48a.png"];
+    return marker;
+}
 
 -(void)startLocatingUser
 {
@@ -69,10 +86,10 @@
     NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
     if (abs(howRecent) < 15.0)
     {
-        //[self.imageDownloadsInProgress removeAllObjects];
         
        // [HUD show:YES];
         CGPoint location = CGPointMake(newLocation.coordinate.latitude, newLocation.coordinate.longitude);
+        NSLog(@"%@", NSStringFromCGPoint(location));
         lastLocation = location;
         //[rm loadSpecialsWithLocation:location distance:self.filterDistance day:self.filterDay];
         //rm._reloading = YES;
@@ -99,7 +116,70 @@
 }
 
 - (IBAction)openReportView:(id)sender {
+    [self startCamera];
+}
+
+-(void) pushReportView
+{
     ReportViewController *RVC = [[ReportViewController alloc]init];
     [self presentViewController:RVC animated:TRUE completion:nil];
 }
+
+
+- (void)startCamera
+{
+    UIImagePickerController *imagePickController=[[UIImagePickerController alloc]init];
+    imagePickController.sourceType=UIImagePickerControllerSourceTypeCamera;
+    imagePickController.delegate=self;
+    imagePickController.allowsEditing=NO;
+    //[self presentModalViewController:imagePickController animated:true];
+    [self presentViewController:imagePickController animated:TRUE completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo NS_DEPRECATED_IOS(2_0, 3_0)
+{
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    //UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    
+    //NSData* imageData = UIImagePNGRepresentation(image);
+    
+    //Chalkboard *newBoard = [[Chalkboard alloc]init];
+    
+    //[newBoard PostNewChalkboardWithImage:image];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self pushReportView];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+        [self pushReportView];
+    }];
+    
+}
+
+- (void)didLoadWithError:(NSError *)error{
+    
+}
+
+- (void)didLoadIncidents:(NSArray *)incidents{
+    for (Incident *In in incidents) {
+        NSLog(@"%@",In.longitude);
+        NSLog(@"%@",In.latitude);
+//        RMPointAnnotation *ann = [[RMPointAnnotation alloc] initWithMapView:mapView
+//                                                                 coordinate:CLLocationCoordinate2DMake(48.839238, 2.337383)
+//                                                                   andTitle:@"Here it is"];
+//        [mapView addAnnotation:ann];
+        RMPointAnnotation *annotation01 = [[RMPointAnnotation alloc]initWithMapView:self.mapView coordinate:CLLocationCoordinate2DMake([In.latitude floatValue], [In.longitude floatValue])  andTitle:@"Map Point!"];
+        [self.mapView addAnnotation: annotation01];
+    }
+    //NSLog(@"%@",incidents);
+}
+
 @end
