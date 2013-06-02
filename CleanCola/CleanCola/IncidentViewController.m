@@ -98,17 +98,17 @@
         {
             self.is_flagged = NO;
         }
-        if(In.medium_url){
-            NSURL *dataUrl = [[NSURL alloc] initWithString:special.medium_url];
+        if(In.image_src){
+            NSURL *dataUrl = [[NSURL alloc] initWithString:In.image_src];
             NSData *data = [[NSData alloc] initWithContentsOfURL:dataUrl];
-            mainImage = [[UIImage alloc] initWithData:data];
-            self.specialImage.layer.shadowColor = [UIColor blackColor].CGColor;
-            self.specialImage.layer.shadowOffset = CGSizeMake(0, 1);
-            self.specialImage.layer.shadowOpacity = 1;
-            self.specialImage.layer.shadowRadius = 5.0;
-            self.specialImage.clipsToBounds = NO;
-            [self.specialImage setImage:mainImage];
-            
+            UIImage *mainImage = [[UIImage alloc] initWithData:data];
+//            self.imageView.layer.shadowColor = [UIColor blackColor].CGColor;
+//            self.imageView.layer.shadowOffset = CGSizeMake(0, 1);
+//            self.imageView.layer.shadowOpacity = 1;
+//            self.imageView.layer.shadowRadius = 5.0;
+//            self.imageView.clipsToBounds = NO;
+            [self.imageView setImage:mainImage];
+        }
     }
     self.title = self.incident_title;
     self.votesLbl.text = [NSString stringWithFormat:@"%d", self.votes];

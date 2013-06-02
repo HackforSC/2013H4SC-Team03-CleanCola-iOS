@@ -93,7 +93,7 @@
      @"date_created" : @"date_created",
      @"votes" : @"votes",
      @"is_closed" : @"is_closed",
-     @"is_closed" : @"is_closed"
+     @"image_src" : @"image_src"
      }];
     
     RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:incidentMapping pathPattern:nil keyPath:@"incident" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
