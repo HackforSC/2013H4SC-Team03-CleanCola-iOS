@@ -25,8 +25,8 @@
 }
 
 @property (nonatomic, strong) RMMapView *mapView;
-//@property (nonatomic, strong) FUIButton *myButton;
 @property (weak, nonatomic) IBOutlet FUIButton *mybutton;
+@property (nonatomic, strong) IBOutlet FUIButton *refineButton;
 
 - (IBAction)openReportView:(id)sender;
 

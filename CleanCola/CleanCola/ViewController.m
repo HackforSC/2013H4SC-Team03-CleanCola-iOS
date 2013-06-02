@@ -26,7 +26,7 @@
     
     RMMapBoxSource *source = [[RMMapBoxSource alloc] initWithMapID:@"cleancola.map-rmhk6v1q"];
     
-    self.mapView = [[RMMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height/3*2) andTilesource:source];
+    self.mapView = [[RMMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-_mybutton.frame.size.height) andTilesource:source];
     [self.view addSubview:self.mapView];
     [self.mapView setDelegate:self];
     self.mapView.zoom = 12;
@@ -50,11 +50,18 @@
     _mybutton.buttonColor = [UIColor turquoiseColor];
     _mybutton.shadowColor = [UIColor greenSeaColor];
     _mybutton.shadowHeight = 3.0f;
-    _mybutton.cornerRadius = 6.0f;
+    _mybutton.cornerRadius = 0.0f;
     _mybutton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
     [_mybutton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
     [_mybutton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
     
+    _refineButton.buttonColor = [UIColor amethystColor];
+    _refineButton.shadowColor = [UIColor wisteriaColor];
+    _refineButton.shadowHeight = 3.0f;
+    _refineButton.cornerRadius = 0.0f;
+    _refineButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [_refineButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [_refineButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
     
     IManager = [[IncidentManager alloc]init];
     IManager.delegate = self;
