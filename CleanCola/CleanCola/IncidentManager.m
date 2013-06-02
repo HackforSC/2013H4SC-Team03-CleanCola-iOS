@@ -84,7 +84,16 @@
 {
     RKObjectMapping* incidentMapping = [RKObjectMapping mappingForClass:[Incident class]];
     [incidentMapping addAttributeMappingsFromDictionary:@{
-     @"image_source": @"source"
+     @"date_created": @"date_created",
+     @"title" : @"title",
+     //@"latlng" : @"latlng",
+     @"description": @"description",
+     @"id": @"incident_id",
+     @"category_id" : @"category_id",
+     @"date_created" : @"date_created",
+     @"votes" : @"votes",
+     @"is_closed" : @"is_closed",
+     @"is_closed" : @"is_closed"
      }];
     
     RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:incidentMapping pathPattern:nil keyPath:@"incident" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
