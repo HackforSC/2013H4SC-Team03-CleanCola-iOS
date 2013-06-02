@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IncidentManager.h"
 
 @interface ReportViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+- (IBAction)SubmitReport:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
 - (IBAction)cancelButton:(id)sender;
 @end

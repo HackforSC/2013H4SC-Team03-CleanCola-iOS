@@ -55,7 +55,6 @@
     [_mybutton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
     [_mybutton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
     
-    
     IManager = [[IncidentManager alloc]init];
     IManager.delegate = self;
     [IManager refreshIncidents];

@@ -24,7 +24,7 @@
     
     RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:incidentMapping pathPattern:nil keyPath:@"incidents" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
     
-    NSURL *URL = [NSURL URLWithString:@"http://api.cleancola.org/v1/incidents"];
+    NSURL *URL = [NSURL URLWithString:@"http://api.cleancola.org/incidents"];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     RKObjectRequestOperation *objectRequestOperation = [[RKObjectRequestOperation alloc] initWithRequest:request responseDescriptors:@[ responseDescriptor ]];
     [objectRequestOperation setCompletionBlockWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
@@ -44,12 +44,39 @@
 
 -(void)makeNewReportWithIncident:(Incident *)inc
 {
-    inc.description = @"This is my new article!";
-    inc.category_id = @"0";
-    inc.latitude = @"-81.1";
-    inc.longitude = @"34.0906";
+    RKObjectMapping *postObjectMapping = [RKObjectMapping requestMapping];
+    [postObjectMapping addAttributeMappingsFromDictionary:@{
+     @"date_created": @"date_created",
+     @"description": @"description",
+     @"incident_id": @"incident_id",
+     @"latitude": @"latitude",
+     @"longitude": @"longitude",
+     @"category_id": @"category_id"
+     }];
+//    
+//    RKObjectMapping* incidentMapping = [RKObjectMapping mappingForClass:[Incident class]];
+//    [incidentMapping addAttributeMappingsFromDictionary:@{
+//     @"date_created": @"date_created",
+//     @"description": @"description",
+//     @"incident_id": @"incident_id",
+//     @"latitude": @"latitude",
+//     @"longitude": @"longitude"
+//     }];
+    RKRequestDescriptor *requestDescriptor = [RKRequestDescriptor requestDescriptorWithMapping:postObjectMapping
+                                                                                   objectClass:[Incident class] rootKeyPath:nil];
     
+    [[RKObjectManager sharedManager] addRequestDescriptor: requestDescriptor];
+    
+    Incident *inc2 = [[Incident alloc]init];
+    inc2.description = @"This is my new article!";
+    inc2.category_id = @"0";
+    inc2.latitude = @"-81.1";
+    inc2.longitude = @"34.0906";
 
-    [[RKObjectManager sharedManager] postObject:inc path:@"/v1/incidents" parameters:nil success:nil failure:nil];
+    //RKLogConfigureByName("RestKit", RKLogLevelWarning);
+    //RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
+    RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
+
+    [[RKObjectManager sharedManager] postObject:inc2 path:@"/incidents" parameters:nil success:nil failure:nil];
 }
 @end

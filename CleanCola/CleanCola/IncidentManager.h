@@ -33,4 +33,5 @@
 //-(void)loadSpecialsWithRestaurantID:(NSString *)restaurantID;
 
 -(void)refreshIncidents;
+-(void)makeNewReportWithIncident:(Incident *)inc;
 @end

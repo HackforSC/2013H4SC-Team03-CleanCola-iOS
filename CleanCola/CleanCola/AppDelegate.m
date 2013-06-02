@@ -21,7 +21,7 @@
     [self.window makeKeyAndVisible];
     
     // Initialize RestKit
-    RKObjectManager* objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://api.cleancola.org/vi"]];
+    RKObjectManager* objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://api.cleancola.org"]];
     
 //    RKManagedObjectStore *managedObjectStore = [RKManagedObjectStore defaultStore];
 //    objectManager.managedObjectStore = managedObjectStore;

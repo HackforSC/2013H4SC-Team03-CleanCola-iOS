@@ -36,6 +36,14 @@
 
 
 
+- (IBAction)SubmitReport:(id)sender {
+    Incident *inc = [[Incident alloc]init];
+    IncidentManager *im = [[IncidentManager alloc]init];
+    [im makeNewReportWithIncident:inc];
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+}
+
 - (IBAction)cancelButton:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

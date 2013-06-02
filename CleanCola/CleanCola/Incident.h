@@ -15,6 +15,7 @@
 @property (nonatomic, copy) NSString* description;
 @property (nonatomic, copy) NSString* latitude;
 @property (nonatomic, copy) NSString* longitude;
+
 @property (nonatomic, strong) NSDate*   date_created;
 
 @end
