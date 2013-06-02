@@ -6,211 +6,211 @@ cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanC
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png Map/../Map/Resources/mapbox@2x.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png Map/../Map/Resources/HeadingAngleSmall.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png Map/../Map/Resources/HeadingAngleSmall@2x.png
-cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png Map/../Map/Resources/LoadingTileZoom.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png Map/../Map/Resources/LoadingTile.png
+cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png Map/../Map/Resources/TrackingDot@2x.png
-cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png Map/../Map/Resources/TrackingDotHalo@2x.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png Map/../Map/Resources/TrackingDotHalo.png
+cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png Map/../Map/Resources/TrackingDotHalo@2x.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png Map/../Map/Resources/TrackingHeading.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png Map/../Map/Resources/TrackingHeading@2x.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png Map/../Map/Resources/TrackingLocation.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png Map/../Map/Resources/TrackingLocation@2x.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png Map/../Map/Resources/HeadingAngleLarge@2x.png
-cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png Map/../Map/Resources/HeadingAngleMedium@2x.png
 cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png Map/../Map/Resources/HeadingAngleMedium.png
-cCpResource Map/../Map/Resources/examples.map-zswgei2n.json ../../Resources/MapBox.bundle/examples.map-zswgei2n.json
+cCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png Map/../Map/Resources/HeadingAngleMedium@2x.png
 cCpResource Map/../Map/Resources/examples.map-z2effxa8.json ../../Resources/MapBox.bundle/examples.map-z2effxa8.json
+cCpResource Map/../Map/Resources/examples.map-zswgei2n.json ../../Resources/MapBox.bundle/examples.map-zswgei2n.json
 cTouch /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle
-t1370146552
-s748
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png
-t1370146552
-s3239
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png
-t1370146552
-s7191
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png
-t1370146552
-s2366
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png
-t1370146552
-s5257
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png
-t1370146552
-s2254
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png
-t1370146552
-s4986
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png
-t1370146552
-s1906
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png
-t1370146552
-s733
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png
-t1370146552
-s849
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png
-t1370146552
-s2480
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png
-t1370146552
-s15224
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png
-t1370146552
-s32226
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png
-t1370146552
-s1110
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png
-t1370146552
-s3093
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png
-t1370146552
-s356
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png
-t1370146552
-s593
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-z2effxa8.json
-t1370146552
-s729
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-zswgei2n.json
-t1370146552
-s738
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png
-t1370146552
-s1879
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png
-t1370146552
-s3976
+t2
+s0
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge.png
-c0000000051AAC6F70000000000000E2C
-t1370146551
+c0000000051AA6D680000000000000E2C
+t1370123624
 s3628
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge@2x.png
-c0000000051AAC6F70000000000002784
-t1370146551
+c0000000051AA6D680000000000002784
+t1370123624
 s10116
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium.png
-c0000000051AAC6F700000000000009DA
-t1370146551
+c0000000051AA6D6800000000000009DA
+t1370123624
 s2522
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium@2x.png
-c0000000051AAC6F70000000000001AA5
-t1370146551
+c0000000051AA6D680000000000001AA5
+t1370123624
 s6821
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall.png
-c0000000051AAC6F70000000000000AA7
-t1370146551
+c0000000051AA6D680000000000000AA7
+t1370123624
 s2727
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall@2x.png
-c0000000051AAC6F70000000000001F1F
-t1370146551
+c0000000051AA6D680000000000001F1F
+t1370123624
 s7967
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTile.png
-c0000000051AAC6F70000000000000B44
-t1370146551
+c0000000051AA6D680000000000000B44
+t1370123624
 s2884
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTileZoom.png
-c0000000051AAC6F700000000000002D3
-t1370146551
+c0000000051AA6D6800000000000002D3
+t1370123624
 s723
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot.png
-c0000000051AAC6F7000000000000035C
-t1370146551
+c0000000051AA6D68000000000000035C
+t1370123624
 s860
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot@2x.png
-c0000000051AAC6F70000000000000953
-t1370146551
+c0000000051AA6D680000000000000953
+t1370123624
 s2387
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo.png
-c0000000051AAC6F70000000000002F07
-t1370146551
+c0000000051AA6D680000000000002F07
+t1370123624
 s12039
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo@2x.png
-c0000000051AAC6F70000000000006991
-t1370146551
+c0000000051AA6D680000000000006991
+t1370123624
 s27025
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading.png
-c0000000051AAC6F700000000000002B3
-t1370146551
+c0000000051AA6D6800000000000002B3
+t1370123624
 s691
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading@2x.png
-c0000000051AAC6F70000000000000664
-t1370146551
+c0000000051AA6D680000000000000664
+t1370123624
 s1636
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation.png
-c0000000051AAC6F7000000000000019E
-t1370146551
+c0000000051AA6D68000000000000019E
+t1370123624
 s414
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation@2x.png
-c0000000051AAC6F70000000000000358
-t1370146551
+c0000000051AA6D680000000000000358
+t1370123624
 s856
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-z2effxa8.json
-c0000000051AAC6F700000000000002D9
-t1370146551
+c0000000051AA6D6800000000000002D9
+t1370123624
 s729
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-zswgei2n.json
-c0000000051AAC6F700000000000002E2
-t1370146551
+c0000000051AA6D6800000000000002E2
+t1370123624
 s738
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/mapbox.png
-c0000000051AAC6F7000000000000087B
-t1370146551
+c0000000051AA6D68000000000000087B
+t1370123624
 s2171
 
 N/Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/Map/../Map/Resources/mapbox@2x.png
-c0000000051AAC6F700000000000013E1
-t1370146551
+c0000000051AA6D6800000000000013E1
+t1370123624
 s5089
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies17d49fa5fe5ab741^f9a2a9a5fe5ab741^---0#1#0#--18"Check dependencies36"7FB6EF3E-604C-4689-992B-3A3B2E703C96-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa373e2eaa45ab741^f721ebeaa45ab741^---0#1#0#--18"Check dependencies36"A0C9F987-9551-45F6-9C18-B6BD5A797EBC-
 
 CCopyPNGFile /Users/HOME/Documents/Projects/2013H4SC-Team03-CleanCola-iOS/CleanCola/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png
 s391816427.182966
