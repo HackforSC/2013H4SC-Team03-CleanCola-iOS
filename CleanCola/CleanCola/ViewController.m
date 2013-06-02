@@ -66,7 +66,9 @@
     IManager = [[IncidentManager alloc]init];
     IManager.delegate = self;
     [IManager refreshIncidents];
-    //[self startLocatingUser];
+    [self startLocatingUser];
+    
+    self.mapView.delegate = self;
 }
 
 -(RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation {
@@ -198,7 +200,7 @@
         CCMarker *marker = [[CCMarker alloc] initWithMapView:self.mapView coordinate:CLLocationCoordinate2DMake([In.latitude floatValue], [In.longitude floatValue]) andTitle:In.description];
         marker.incident_id = In.incident_id;
         
-        RMMarker *image;
+        RMMarker *image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"marker" tintColor:[UIColor asbestosColor]];
         
         switch ([In.category_id intValue]) {
             case 2:
@@ -216,7 +218,7 @@
         
         [marker setLayer:image];
         
-        [self.mapView addAnnotation: annotation01];
+        [self.mapView addAnnotation: marker];
     }
     //NSLog(@"%@",incidents);
 }
