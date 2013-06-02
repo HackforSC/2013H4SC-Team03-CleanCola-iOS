@@ -28,6 +28,10 @@
     return self;
 }
 
+- (IBAction)shareButton:(id)sender {
+    [self showShareSheet];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,6 +46,14 @@
     self.closeButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
     [self.closeButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
     [self.closeButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    
+//    self.shareButton.buttonColor = [UIColor emerlandColor];
+//    self.shareButton.shadowColor = [UIColor nephritisColor];
+//    self.shareButton.shadowHeight = 3.0f;
+//    self.shareButton.cornerRadius = 6.0f;
+//    self.shareButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+//    [self.shareButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+//    [self.shareButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
     
     self.votesLbl.font = [UIFont boldFlatFontOfSize:20.0];
     self.votesLbl.textColor = [UIColor midnightBlueColor];
@@ -61,6 +73,17 @@
                                       cornerRadius:3
                                    whenContainedIn:[self class]];
     
+    //Only show sharing to iOS 6 users
+//    if(NSClassFromString (@"UIActivityViewController")) {
+//        UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]
+//                                                  initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+//                                                  target:self
+//                                                  action:@selector(showShareSheet)];
+//        UINavigationItem *item = [[UINavigationItem alloc] initWithTitle:@"Title"];
+//        item.rightBarButtonItem = rightButton;
+//        item.hidesBackButton = YES;
+//        [self.navBar pushNavigationItem:item animated:NO];
+//    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -141,4 +164,14 @@
     [self.closeButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
 }
 
+- (void)showShareSheet
+{
+    if([UIActivityViewController class] ) {
+        NSString *textToShare = [NSString stringWithFormat:@"%@ #thatsrubbish #hackforsc ", self.incident_title];
+        NSArray *itemsToShare = [[NSArray alloc] initWithObjects:textToShare, nil];
+        UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
+        activityVC.excludedActivityTypes = [[NSArray alloc] initWithObjects: UIActivityTypePrint, UIActivityTypeCopyToPasteboard, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToWeibo, nil];
+        [self presentViewController:activityVC animated:YES completion:nil];
+    }
+}
 @end

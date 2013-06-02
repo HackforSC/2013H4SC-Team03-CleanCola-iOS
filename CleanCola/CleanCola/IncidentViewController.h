@@ -39,11 +39,13 @@
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) IBOutlet FUIButton *closeButton;
 @property (nonatomic, strong) IBOutlet UINavigationBar *navBar;
-@property (nonatomic, strong) IBOutlet UIBarButtonItem *barButton;
+@property (nonatomic, strong) IBOutlet FUIButton *barButton;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButton;
 @property (nonatomic, strong) IncidentManager *incidentMgr;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil incident_id:(NSString *)incident_id;
+- (IBAction)shareButton:(id)sender;
 
 - (IBAction)close:(id)sender;
 - (IBAction)valueChanged:(UIStepper *)sender;
