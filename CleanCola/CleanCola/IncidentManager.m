@@ -104,7 +104,26 @@
 
 -(void)makeNewReportWithIncident:(Incident *)inc Image:(UIImage *)image
 {
+    RKObjectMapping* incidentMapping = [RKObjectMapping mappingForClass:[Incident class]];
+    [incidentMapping addAttributeMappingsFromDictionary:@{
+     @"date_created": @"date_created",
+     @"title" : @"title",
+     @"description": @"description",
+     @"id": @"incident_id",
+     @"category_id" : @"category_id",
+     @"date_created" : @"date_created",
+     @"votes" : @"votes",
+     @"is_closed" : @"is_closed",
+     @"is_flagged" : @"is_flagged",
+     @"votes" :@"votes",
+     @"latitude": @"latitude",
+     @"longitude": @"longitude"
+     }];
     
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:incidentMapping pathPattern:@"/incidents" keyPath:@"incident" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+
+    [[RKObjectManager sharedManager] addResponseDescriptor:responseDescriptor];
+
     //RKLogConfigureByName("RestKit", RKLogLevelWarning);
     //RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
     RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
@@ -149,21 +168,22 @@
 
 -(void)saveImage:(UIImage *)image Incident:(NSArray *)inc{
     
-    
+    self.userImage = image;;
     // Configure a request mapping
     // Shortcut for [RKObjectMapping mappingForClass:[NSMutableDictionary class] ]
-    RKObjectMapping* chalkboardeRequestMapping = [RKObjectMapping requestMapping ];
+    //RKObjectMapping* chalkboardeRequestMapping = [RKObjectMapping requestMapping ];
     //    [chalkboardeRequestMapping addAttributeMappingsFromArray:@[ @"imageData" ]];
     
     // Now configure the request descriptor
-    RKRequestDescriptor *requestDescriptor2 = [RKRequestDescriptor requestDescriptorWithMapping:chalkboardeRequestMapping objectClass:[Incident class] rootKeyPath:@"incident"];
+    //RKRequestDescriptor *requestDescriptor2 = [RKRequestDescriptor requestDescriptorWithMapping:chalkboardeRequestMapping objectClass:[Incident class] rootKeyPath:@"incident"];
     NSString *path = @"";
+    
     for (Incident *In in inc) {
-        NSString *path = [[NSString alloc]initWithFormat:@"/incidents/%@/images", In.incident_id ];
+        path = [[NSString alloc]initWithFormat:@"/incidents/%@/images", In.incident_id ];
     }
     // Serialize the Article attributes then attach a file
-    NSMutableURLRequest *request = [[RKObjectManager sharedManager] multipartFormRequestWithObject:self method:RKRequestMethodPOST path:path parameters:nil constructingBodyWithBlock: ^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFileData:UIImageJPEGRepresentation(image, 0.5)
+    NSMutableURLRequest *request = [[RKObjectManager sharedManager] multipartFormRequestWithObject:[inc objectAtIndex:0] method:RKRequestMethodPOST path:path parameters:nil constructingBodyWithBlock: ^(id<AFMultipartFormData> formData) {
+        [formData appendPartWithFileData:UIImageJPEGRepresentation(self.userImage, 0.5)
                                     name:@"image"
                                 fileName:@"photo.png"
                                 mimeType:@"image/png"];

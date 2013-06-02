@@ -27,6 +27,8 @@
 
 @property (nonatomic, retain) id <IncidentDelegate> delegate;
 @property (nonatomic) BOOL _reloading;
+@property (nonatomic, retain) UIImage *userImage;
+
 
 //-(void)loadSpecialsWithLocation:(CGPoint)location distance:(NSNumber *)distance;
 //-(void)loadSpecialsWithLocation:(CGPoint)location distance:(NSNumber *)distance day:(NSString*)day;
