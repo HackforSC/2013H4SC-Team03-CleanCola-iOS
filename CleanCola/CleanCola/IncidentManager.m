@@ -42,7 +42,8 @@
     [incidentMapping addAttributeMappingsFromDictionary:@{
      @"date_created": @"date_created",
      @"description": @"description",
-     @"incident_id": @"incident_id",
+     @"id": @"incident_id",
+     @"category_id" : @"category_id",
      @"latitude": @"latitude",
      @"longitude": @"longitude"
      }];
@@ -56,6 +57,40 @@
         RKLogInfo(@"Load collection of Articles: %@", mappingResult.array);
     
         [delegate didLoadIncidents:mappingResult.array];
+        
+    } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+        RKLogError(@"Operation failed with error: %@", error);
+    }];
+    [objectRequestOperation start];
+}
+
+- (void)loadIncidentWithId:(NSString *)incident_id
+{
+    RKObjectMapping* incidentMapping = [RKObjectMapping mappingForClass:[Incident class]];
+    [incidentMapping addAttributeMappingsFromDictionary:@{
+     @"date_created": @"date_created",
+     @"title" : @"title",
+     //@"latlng" : @"latlng",
+     @"description": @"description",
+     @"id": @"incident_id",
+     @"category_id" : @"category_id",
+     @"date_created" : @"date_created",
+     @"votes" : @"votes",
+     @"is_closed" : @"is_closed",
+     @"is_closed" : @"is_closed"
+     }];
+    
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:incidentMapping pathPattern:nil keyPath:@"incident" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    
+    NSString *urlString = @"http://api.cleancola.org/incidents";
+    urlString = [urlString stringByAppendingPathComponent:incident_id];
+    NSURL *URL = [NSURL URLWithString:urlString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    RKObjectRequestOperation *objectRequestOperation = [[RKObjectRequestOperation alloc] initWithRequest:request responseDescriptors:@[ responseDescriptor ]];
+    [objectRequestOperation setCompletionBlockWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        RKLogInfo(@"Load collection of Articles: %@", mappingResult.array);
+        
+        [delegate didLoadIncident:mappingResult.array];
         
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
         RKLogError(@"Operation failed with error: %@", error);

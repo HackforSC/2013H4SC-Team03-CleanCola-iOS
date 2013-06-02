@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "IncidentViewController.h"
 
 @interface ViewController ()
 
@@ -66,7 +67,9 @@
     IManager = [[IncidentManager alloc]init];
     IManager.delegate = self;
     [IManager refreshIncidents];
-    //[self startLocatingUser];
+    [self startLocatingUser];
+    
+    self.mapView.delegate = self;
 }
 
 -(RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation {
@@ -192,10 +195,50 @@
 //                                                                 coordinate:CLLocationCoordinate2DMake(48.839238, 2.337383)
 //                                                                   andTitle:@"Here it is"];
 //        [mapView addAnnotation:ann];
-        RMPointAnnotation *annotation01 = [[RMPointAnnotation alloc]initWithMapView:self.mapView coordinate:CLLocationCoordinate2DMake([In.latitude floatValue], [In.longitude floatValue])  andTitle:@"Map Point!"];
-        [self.mapView addAnnotation: annotation01];
+        
+        RMPointAnnotation *annotation01 = [[RMPointAnnotation alloc]initWithMapView:self.mapView coordinate:CLLocationCoordinate2DMake([In.latitude floatValue], [In.longitude floatValue])  andTitle:In.description];
+        
+        CCMarker *marker = [[CCMarker alloc] initWithMapView:self.mapView coordinate:CLLocationCoordinate2DMake([In.latitude floatValue], [In.longitude floatValue]) andTitle:In.description];
+        marker.incident_id = In.incident_id;
+        
+        RMMarker *image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor redColor]];
+        
+        switch ([In.category_id intValue]) {
+            case 2:
+                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor blueColor]];
+                break;
+                
+            case 3:
+                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor greenColor]];
+                break;
+                
+            default:
+                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"garden" tintColor:[UIColor yellowColor]];
+                break;
+        }
+        
+        [marker setLayer:image];
+        
+        [self.mapView addAnnotation: marker];
     }
     //NSLog(@"%@",incidents);
+}
+
+- (void)mapView:(RMMapView *)mapView didSelectAnnotation:(RMAnnotation *)annotation
+{
+    CCMarker *marker = annotation;
+    
+    IncidentViewController *icViewController = [[IncidentViewController alloc] initWithNibName:@"IncidentViewController" bundle:nil incident_id:marker.incident_id];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:icViewController];
+    
+    
+    
+    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(shutDown)];
+    self.navigationItem.leftBarButtonItem = closeButton;
+    
+    
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 @end

@@ -15,6 +15,7 @@
 #import <FlatUIKit/UIFont+FlatUI.h>
 #import <FlatUIKit/UIImage+FlatUI.h>
 #import "IncidentManager.h"
+#import "CCMarker.h"
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, IncidentDelegate, RMMapViewDelegate>{
     CLLocationManager *CLController;
