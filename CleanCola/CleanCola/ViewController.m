@@ -192,7 +192,30 @@
 //                                                                 coordinate:CLLocationCoordinate2DMake(48.839238, 2.337383)
 //                                                                   andTitle:@"Here it is"];
 //        [mapView addAnnotation:ann];
-        RMPointAnnotation *annotation01 = [[RMPointAnnotation alloc]initWithMapView:self.mapView coordinate:CLLocationCoordinate2DMake([In.latitude floatValue], [In.longitude floatValue])  andTitle:@"Map Point!"];
+        
+        RMPointAnnotation *annotation01 = [[RMPointAnnotation alloc]initWithMapView:self.mapView coordinate:CLLocationCoordinate2DMake([In.latitude floatValue], [In.longitude floatValue])  andTitle:In.description];
+        
+        CCMarker *marker = [[CCMarker alloc] initWithMapView:self.mapView coordinate:CLLocationCoordinate2DMake([In.latitude floatValue], [In.longitude floatValue]) andTitle:In.description];
+        marker.incident_id = In.incident_id;
+        
+        RMMarker *image;
+        
+        switch ([In.category_id intValue]) {
+            case 2:
+                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"marker" tintColor:[UIColor asbestosColor]];
+                break;
+                
+            case 3:
+                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"marker" tintColor:[UIColor sunflowerColor]];
+                break;
+                
+            default:
+                image = [[RMMarker alloc] initWithMapBoxMarkerImage:@"marker" tintColor:[UIColor wetAsphaltColor]];
+                break;
+        }
+        
+        [marker setLayer:image];
+        
         [self.mapView addAnnotation: annotation01];
     }
     //NSLog(@"%@",incidents);

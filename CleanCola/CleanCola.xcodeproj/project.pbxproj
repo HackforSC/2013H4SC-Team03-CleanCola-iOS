@@ -25,6 +25,7 @@
 		F40A13EC175A83A8001698EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40A13EB175A83A8001698EB /* ViewController.m */; };
 		F40A13EF175A83A8001698EB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40A13ED175A83A8001698EB /* ViewController.xib */; };
 		F40A13F5175AA7DF001698EB /* libPods.a in Resources */ = {isa = PBXBuildFile; fileRef = 7022E64ED26C476A9307C9E9 /* libPods.a */; };
+		F48B3099175B1BFE00118881 /* CCMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B3098175B1BFE00118881 /* CCMarker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		F40A13EA175A83A8001698EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F40A13EB175A83A8001698EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F40A13EE175A83A8001698EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F48B3097175B1BFD00118881 /* CCMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMarker.h; sourceTree = "<group>"; };
+		F48B3098175B1BFE00118881 /* CCMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMarker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				F40A13EA175A83A8001698EB /* ViewController.h */,
 				F40A13EB175A83A8001698EB /* ViewController.m */,
 				F40A13ED175A83A8001698EB /* ViewController.xib */,
+				F48B3097175B1BFD00118881 /* CCMarker.h */,
+				F48B3098175B1BFE00118881 /* CCMarker.m */,
 				F40A13D9175A83A8001698EB /* Supporting Files */,
 				ECDF8C5F175A99BC0079858C /* ReportViewController.h */,
 				ECDF8C60175A99BC0079858C /* ReportViewController.m */,
@@ -251,6 +256,7 @@
 				ECDF8C62175A99BC0079858C /* ReportViewController.m in Sources */,
 				EC4FA778175AA6F200C7E351 /* Incident.m in Sources */,
 				EC4FA77D175ACFD200C7E351 /* IncidentManager.m in Sources */,
+				F48B3099175B1BFE00118881 /* CCMarker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
