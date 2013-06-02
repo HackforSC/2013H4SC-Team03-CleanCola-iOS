@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "IncidentViewController.h"
 
 @interface ViewController ()
 
@@ -227,6 +228,17 @@
 {
     CCMarker *marker = annotation;
     
+    IncidentViewController *icViewController = [[IncidentViewController alloc] initWithNibName:@"IncidentViewController" bundle:nil incident_id:marker.incident_id];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:icViewController];
+    
+    
+    
+    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(shutDown)];
+    self.navigationItem.leftBarButtonItem = closeButton;
+    
+    
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 @end

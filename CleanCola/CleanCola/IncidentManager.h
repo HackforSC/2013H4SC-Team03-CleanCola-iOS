@@ -18,6 +18,7 @@
 @optional
 //- (void)didLoadIncident:(Incident *)incident;
 - (void)didLoadIncidents:(NSArray *)incidents;
+- (void)didLoadIncident:(NSArray *)incidents;
 
 @end
 @interface IncidentManager : NSObject{
@@ -34,4 +35,5 @@
 
 -(void)refreshIncidents;
 -(void)makeNewReportWithIncident:(Incident *)inc;
+- (void)loadIncidentWithId:(NSString *)incident_id;
 @end

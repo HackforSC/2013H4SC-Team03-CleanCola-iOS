@@ -45,22 +45,27 @@
     [incidentMapping addAttributeMappingsFromDictionary:@{
      @"date_created": @"date_created",
      @"title" : @"title",
-     @"latlng" : @"latlng",
+     //@"latlng" : @"latlng",
      @"description": @"description",
-     @"incident_id": @"incident_id",
+     @"id": @"incident_id",
+     @"category_id" : @"category_id",
      @"date_created" : @"date_created",
      @"votes" : @"votes",
+     @"is_closed" : @"is_closed",
+     @"is_closed" : @"is_closed"
      }];
     
-    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:incidentMapping pathPattern:nil keyPath:@"incidents" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:incidentMapping pathPattern:nil keyPath:@"incident" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
     
-    NSURL *URL = [NSURL URLWithString:@"http://api.cleancola.org/incidents"];
+    NSString *urlString = @"http://api.cleancola.org/incidents";
+    urlString = [urlString stringByAppendingPathComponent:incident_id];
+    NSURL *URL = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     RKObjectRequestOperation *objectRequestOperation = [[RKObjectRequestOperation alloc] initWithRequest:request responseDescriptors:@[ responseDescriptor ]];
     [objectRequestOperation setCompletionBlockWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         RKLogInfo(@"Load collection of Articles: %@", mappingResult.array);
         
-        [delegate didLoadIncidents:mappingResult.array];
+        [delegate didLoadIncident:mappingResult.array];
         
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
         RKLogError(@"Operation failed with error: %@", error);
