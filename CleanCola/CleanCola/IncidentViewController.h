@@ -38,9 +38,13 @@
 @property (nonatomic, strong) IBOutlet UILabel *votesLbl;
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) IBOutlet FUIButton *closeButton;
+@property (nonatomic, strong) IBOutlet UINavigationBar *navBar;
+@property (nonatomic, strong) IBOutlet UIBarButtonItem *barButton;
 
 @property (nonatomic, strong) IncidentManager *incidentMgr;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil incident_id:(NSString *)incident_id;
+
+- (IBAction)close:(id)sender;
 
 @end

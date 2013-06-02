@@ -230,9 +230,7 @@
     
     IncidentViewController *icViewController = [[IncidentViewController alloc] initWithNibName:@"IncidentViewController" bundle:nil incident_id:marker.incident_id];
     
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:icViewController];
-    
-    [self presentViewController:navController animated:YES completion:nil];
+    [self presentViewController:icViewController animated:YES completion:nil];
 }
 
 @end

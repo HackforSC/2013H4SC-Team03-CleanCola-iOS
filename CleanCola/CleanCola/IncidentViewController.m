@@ -51,11 +51,7 @@
     
     [self.stepper configureFlatStepperWithColor:[UIColor nephritisColor] highlightedColor:[UIColor nephritisColor] disabledColor:[UIColor emerlandColor] iconColor:[UIColor cloudsColor]];
     
-    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(shutDown)];
-    self.navigationController.navigationItem.leftBarButtonItem = closeButton;
-    [self.navigationController.navigationItem setRightBarButtonItem:closeButton];
-    
-    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
+    [self.navBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
     
     [UIBarButtonItem configureFlatButtonsWithColor:[UIColor peterRiverColor]
                                   highlightedColor:[UIColor belizeHoleColor]
@@ -104,6 +100,11 @@
     self.votesLbl.text = [NSString stringWithFormat:@"%d", self.votes];
     self.dateLbl.text = [NSDate stringForDisplayFromDate:self.date_created];
     self.descrLbl.text = self.description;
+}
+
+- (IBAction)close:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
