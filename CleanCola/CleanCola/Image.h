@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Image : NSObject
-
+@property (nonatomic, strong) NSURL *source;
 @end
