@@ -84,7 +84,7 @@
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Refine</string>
+						<string key="IBUINormalTitle">Reload</string>
 						<reference key="IBUIHighlightedTitleColor" ref="726043650"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>

@@ -140,7 +140,10 @@
 
 - (IBAction)refineMapItems:(id)sender{
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    [self.mapView removeAllAnnotations];
     [IManager refreshIncidents];
+    RMMapBoxSource *source = [[RMMapBoxSource alloc] initWithMapID:@"cleancola.map-rmhk6v1q"];
+    [self.mapView reloadTileSource:source];
 }
 
 -(void) pushReportView
