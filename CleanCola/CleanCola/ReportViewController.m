@@ -41,8 +41,8 @@
     IncidentManager *im = [[IncidentManager alloc]init];
     inc.description = self.description.text;
     inc.title = self.reportTitle.text;
-    inc.latitude = @"34.0006";
-    inc.longitude = @"-81.0350";
+    inc.latitude = [NSString stringWithFormat:@"%f", self.lastLocation.x];
+    inc.longitude = [NSString stringWithFormat:@"%f", self.lastLocation.y];
     inc.category_id = @"0";
     //inc.image = self.userImage;
     [im makeNewReportWithIncident:inc Image:self.userImage];

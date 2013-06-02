@@ -22,4 +22,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
 - (IBAction)cancelButton:(id)sender;
 @property (nonatomic, retain) UIImage *userImage;
+@property (nonatomic) CGPoint lastLocation;
+
 @end

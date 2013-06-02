@@ -72,6 +72,11 @@
     self.mapView.delegate = self;
 }
 
+-(void) viewDidAppear:(BOOL)animated
+{
+    [IManager refreshIncidents];
+}
+
 -(RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation {
     NSLog(@"Marker is called!"); //Is not outputted so this method is never called.
     RMMarker *marker = [[RMMarker alloc] initWithMapBoxMarkerImage:@"marker/pin-l-bus+48a.png"];
@@ -128,7 +133,14 @@
 
 - (IBAction)openReportView:(id)sender {
     ReportViewController *RVC = [[ReportViewController alloc]init];
+    RVC.lastLocation = lastLocation;
     [self presentViewController:RVC animated:TRUE completion:nil];
+}
+
+
+- (IBAction)refineMapItems:(id)sender{
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    [IManager refreshIncidents];
 }
 
 -(void) pushReportView
@@ -136,6 +148,7 @@
     if (![self.presentedViewController isBeingDismissed]) {
         
         ReportViewController *RVC = [[ReportViewController alloc]init];
+        RVC.lastLocation = lastLocation;
         [self presentViewController:RVC animated:TRUE completion:nil];
     }
 }
